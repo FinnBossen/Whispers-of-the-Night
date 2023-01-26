@@ -20,6 +20,7 @@ ASoundHorrorGameIdeaPlayerController::ASoundHorrorGameIdeaPlayerController()
 	DefaultMouseCursor = EMouseCursor::Default;
 	CachedDestination = FVector::ZeroVector;
 	FollowTime = 0.f;
+	MovementSpeed = 1.f;
 }
 
 void ASoundHorrorGameIdeaPlayerController::BeginPlay()
@@ -80,7 +81,7 @@ void ASoundHorrorGameIdeaPlayerController::SetupInputComponent()
 void ASoundHorrorGameIdeaPlayerController::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
-	FVector2D MovementVector = Value.Get<FVector2D>();
+	const FVector2D MovementVector = Value.Get<FVector2D>();
 
 
 	// find out which way is forward
@@ -96,8 +97,8 @@ void ASoundHorrorGameIdeaPlayerController::Move(const FInputActionValue& Value)
 	// add movement 
 	if (APawn* ControlledPawn = GetPawn(); ControlledPawn != nullptr)
 	{
-		ControlledPawn->AddMovementInput(ForwardDirection, MovementVector.Y);
-		ControlledPawn->AddMovementInput(RightDirection, MovementVector.X);
+		ControlledPawn->AddMovementInput(ForwardDirection * MovementSpeed, MovementVector.Y * MovementSpeed);
+		ControlledPawn->AddMovementInput(RightDirection * MovementSpeed, MovementVector.X * MovementSpeed);
 		if (const ACharacter* CharacterFromController = GetCharacter(); CharacterFromController != nullptr)
 		{
 			CharacterFromController->GetMesh()->SetWorldRotation(LastMouseRotation);

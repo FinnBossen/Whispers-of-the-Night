@@ -23,6 +23,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	float ShortPressThreshold;
 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = ( DefaultValue = "1.0"), Category = Input)
+	float MovementSpeed;
+
 	/** FX Class that we will spawn when clicking */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	UNiagaraSystem* FXCursor;
