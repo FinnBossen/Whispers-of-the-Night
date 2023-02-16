@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="" />
+    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,6 +190,7 @@
       <workItem from="1674770761220" duration="1830000" />
       <workItem from="1676135335201" duration="1918000" />
       <workItem from="1676146446755" duration="1771000" />
+      <workItem from="1676583960786" duration="1572000" />
     </task>
     <servers />
   </component>
