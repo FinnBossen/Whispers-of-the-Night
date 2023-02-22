@@ -7,7 +7,13 @@
 		{
 			"Name": "SoundHorrorGameIdea",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"Slate",
+				"SlateCore",
+				"UMG"
+			]
 		}
 	],
 	"Plugins": [
