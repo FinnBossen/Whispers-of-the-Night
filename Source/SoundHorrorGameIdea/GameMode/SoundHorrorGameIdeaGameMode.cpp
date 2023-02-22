@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "SoundHorrorGameIdeaGameMode.h"
-#include "SoundHorrorGameIdeaPlayerController.h"
-#include "SoundHorrorGameIdeaCharacter.h"
+#include "SoundHorrorGameIdea/Character/SoundHorrorGameIdeaCharacter.h"
+#include "SoundHorrorGameIdea/Controller/SoundHorrorGameIdeaPlayerController.h"
 #include "UObject/ConstructorHelpers.h"
 
 ASoundHorrorGameIdeaGameMode::ASoundHorrorGameIdeaGameMode()

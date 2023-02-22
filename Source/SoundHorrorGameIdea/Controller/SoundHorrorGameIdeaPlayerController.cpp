@@ -7,7 +7,7 @@
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
-#include "SoundHorrorGameIdeaCharacter.h"
+#include "SoundHorrorGameIdea/Character/SoundHorrorGameIdeaCharacter.h"
 #include "Engine/World.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"

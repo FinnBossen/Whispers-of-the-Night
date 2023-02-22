@@ -10,6 +10,12 @@
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Character/SoundHorrorGameIdeaCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Character/SoundHorrorGameIdeaCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/GameMode/SoundHorrorGameIdeaGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/GameMode/SoundHorrorGameIdeaGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Controller/SoundHorrorGameIdeaPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/SoundHorrorGameIdeaPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Controller/SoundHorrorGameIdeaPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +197,7 @@
       <workItem from="1676135335201" duration="1918000" />
       <workItem from="1676146446755" duration="1771000" />
       <workItem from="1676583960786" duration="1572000" />
+      <workItem from="1677097682876" duration="1187000" />
     </task>
     <servers />
   </component>
