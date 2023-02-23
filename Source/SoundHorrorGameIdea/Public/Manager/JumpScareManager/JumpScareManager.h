@@ -16,7 +16,7 @@ public:
 	// Sets default values for this actor's properties
 	AJumpScareManager();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredJumpScares)
-	TArray<TAssetSubclassOf<UCustomJumpScare>> StoredJumpScares;
+	TArray<UCustomJumpScare*> StoredJumpScares;
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,5 +25,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	UFUNCTION(BlueprintCallable, Category = StoredJumpScares)
+	UCustomJumpScare* GetRandomJumpScare();
 	
 };

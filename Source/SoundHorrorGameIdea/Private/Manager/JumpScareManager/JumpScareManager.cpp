@@ -25,3 +25,9 @@ void AJumpScareManager::Tick(float DeltaTime)
 
 }
 
+UCustomJumpScare* AJumpScareManager::GetRandomJumpScare()
+{
+	const int RandomIndex = FMath::RandRange(0, StoredJumpScares.Num() - 1);
+	return StoredJumpScares[RandomIndex];
+}
+
