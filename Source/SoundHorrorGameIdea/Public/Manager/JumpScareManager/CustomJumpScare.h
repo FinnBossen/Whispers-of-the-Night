@@ -21,5 +21,5 @@ public:
 	USoundBase* JumpScareSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Texture)
-	UTexture* JumpScareTexture;
+	UTexture2D* JumpScareTexture;
 };
