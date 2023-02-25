@@ -1,13 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "SoundHorrorGameIdeaPlayerController.h"
+#include "Controller/SoundHorrorGameIdeaPlayerController.h"
 
 #include "AnimPose.h"
 #include "GameFramework/Pawn.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
-#include "SoundHorrorGameIdea/Character/SoundHorrorGameIdeaCharacter.h"
+#include "SoundHorrorGameIdea/Public/Character/SoundHorrorGameIdeaCharacter.h"
 #include "Engine/World.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
