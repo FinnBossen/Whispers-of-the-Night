@@ -8,7 +8,7 @@
 #include "JumpScareManager.generated.h"
 
 UCLASS()
-class SOUNDHORRORGAMEIDEA_API AJumpScareManager : public AActor
+class SOUNDHORRORGAMEIDEA_API AJumpScareManager final : public AActor
 {
 	GENERATED_BODY()
 	

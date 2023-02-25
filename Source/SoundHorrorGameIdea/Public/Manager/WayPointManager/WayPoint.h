@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Engine/TargetPoint.h"
 #include "GameFramework/Actor.h"
 #include "WayPoint.generated.h"
 
 UCLASS()
-class SOUNDHORRORGAMEIDEA_API AWayPoint : public AActor
+class SOUNDHORRORGAMEIDEA_API AWayPoint final : public AActor
 {
 	GENERATED_BODY()
 	
@@ -19,8 +20,24 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	FVector WayPointLocation;
+	bool Used = false;
+
+	ATargetPoint* TargetPoint;
+
+
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	
+	FVector3d GetWayPointLocation() const;
+
+	bool IsUsed() const;
+
+	void SetIsUsed(bool IsUsed);
+
+	ATargetPoint* GetTargetPoint() const;
 
 };

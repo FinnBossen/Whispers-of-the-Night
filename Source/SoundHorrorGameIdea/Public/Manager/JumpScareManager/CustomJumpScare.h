@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class SOUNDHORRORGAMEIDEA_API UCustomJumpScare : public UUserWidget
+class SOUNDHORRORGAMEIDEA_API UCustomJumpScare final : public UUserWidget
 {
 	GENERATED_BODY()
 
