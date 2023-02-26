@@ -11,10 +11,12 @@ UCLASS()
 class SOUNDHORRORGAMEIDEA_API AWayPoint final : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AWayPoint();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Components")
+	ATargetPoint* TargetPoint;
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,15 +25,11 @@ protected:
 	FVector WayPointLocation;
 	bool Used = false;
 
-	ATargetPoint* TargetPoint;
-
-
-
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	void OnConstruction(const FTransform &Transform) override;
 
-	
 	FVector3d GetWayPointLocation() const;
 
 	bool IsUsed() const;
@@ -39,5 +37,4 @@ public:
 	void SetIsUsed(bool IsUsed);
 
 	ATargetPoint* GetTargetPoint() const;
-
 };

@@ -47,6 +47,7 @@ public:
 
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	// ReSharper disable once UnrealHeaderToolError
 	class UInputMappingContext* DefaultMappingContext;
 
 	/** Jump Input Action */

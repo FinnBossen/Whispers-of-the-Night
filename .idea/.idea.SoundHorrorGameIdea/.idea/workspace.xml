@@ -9,12 +9,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/BPWayPoint.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/BPWayPointManager.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/1/YO/CW0FCCHT45EZYKM084ZUY3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/2/KB/6T5NGSHHPF9LK4Z385OEFY.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/1C/FJW1YUGR26Z54WSD3BJUE2.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/4/02/7072J5GQ9XOWT1H8OYK83C.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/4/24/NE22QEY52QZLRT3FXHB1GF.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/J2/1HV17OSDA7FOXMLM2RO81D.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/LQ/6BSFSWAXPR1B3JX5O367XD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/7/BM/7VC3ZWIWZRKD2EC0J1RY1S.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/8/9C/5SFV5G282F5RH9PP2VQRGL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/2A/C8X5O0PWFK9989D6MUKSYO.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/9J/HPMVG2T9DGPXT58X8U4YEJ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/A/FK/L15TYIB51M4VGMD9G1LKCZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/2G/UIIFO11R6EPY78CT58GAOG.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/9/2I/9KF8X3XXT3RBY8MUG689AL.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/TopDown/Maps/GeneralGameMechanicsTestMap/5/RY/1KB87VEGDXWRJ7WR4A5AKA.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/JumpScareManager/Jumpscare/WB_JumpScare.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/JumpScareManager/Jumpscare/WB_JumpScare.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/MyWayPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/MyWayPoint.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/MyWayPointManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/WayPointManager/MyWayPointManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Maps/GeneralGameMechanicsTestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Maps/GeneralGameMechanicsTestMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/0/NF/AAIV292W3U7W3NTX6H2NC9.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/0/NF/AAIV292W3U7W3NTX6H2NC9.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/1/GS/VEIW13WHOP4ALJDSAXERP2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/1/GS/VEIW13WHOP4ALJDSAXERP2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/2/RA/K7L7AXG7X5UIYFAP79Q4G8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/2/RA/K7L7AXG7X5UIYFAP79Q4G8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/2/S4/IQV3BWYHRJCWPHN6TRIW9O.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/2/S4/IQV3BWYHRJCWPHN6TRIW9O.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/CC/895IEWYBDRTIO3NFG1W253.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/CC/895IEWYBDRTIO3NFG1W253.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/BW/CMG1E4IG37AKJELWAFM4FS.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/BW/CMG1E4IG37AKJELWAFM4FS.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/MZ/6U94TQJN191IRM5AC1DD0R.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/MZ/6U94TQJN191IRM5AC1DD0R.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/R0/HT576G1JYCOWOZXLGDOZWG.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/R0/HT576G1JYCOWOZXLGDOZWG.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/8/WK/TBZ93CHSLT8SPUD7WZ5PTY.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/8/WK/TBZ93CHSLT8SPUD7WZ5PTY.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/GV/KPPHW83VVJPWE4CX07XYAL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/GV/KPPHW83VVJPWE4CX07XYAL.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/RX/XUZB8GNDHP4FMOGTNL60UF.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/RX/XUZB8GNDHP4FMOGTNL60UF.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/XZ/ATBQL2U6ELEG4SQT39JHPV.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/XZ/ATBQL2U6ELEG4SQT39JHPV.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/YW/IC832ETY0W7UAII5QI944R.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/B/YW/IC832ETY0W7UAII5QI944R.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/5I/1SQI2LJM4M3TY88EIGUTGW.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/5I/1SQI2LJM4M3TY88EIGUTGW.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/PT/MBGCKV44BUJX3AK3QVE4FZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/PT/MBGCKV44BUJX3AK3QVE4FZ.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/6X/J2HDLKXWKGYF5S26TVZ7YF.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/6X/J2HDLKXWKGYF5S26TVZ7YF.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPoint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPoint.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/JumpScareManager/CustomJumpScare.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/JumpScareManager/CustomJumpScare.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/JumpScareManager/JumpScareManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/JumpScareManager/JumpScareManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Controller/SoundHorrorGameIdeaPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Controller/SoundHorrorGameIdeaPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/WayPointManager/WayPoint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/WayPointManager/WayPoint.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/WayPointManager/WayPointManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/WayPointManager/WayPointManager.h" afterDir="false" />
     </list>
@@ -54,6 +92,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.43969464&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -211,6 +250,11 @@
       <workItem from="1677185581626" duration="607000" />
       <workItem from="1677329914359" duration="204000" />
       <workItem from="1677330199791" duration="7235000" />
+      <workItem from="1677407583449" duration="2227000" />
+      <workItem from="1677409888373" duration="351000" />
+      <workItem from="1677410367119" duration="575000" />
+      <workItem from="1677411008005" duration="299000" />
+      <workItem from="1677411362937" duration="2780000" />
     </task>
     <servers />
   </component>
@@ -232,6 +276,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPoint.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

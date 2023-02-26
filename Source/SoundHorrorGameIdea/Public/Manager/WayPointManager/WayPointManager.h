@@ -26,12 +26,13 @@ protected:
 
 	TArray<AWayPoint*> SortStoredWayPointsByDistance( FVector Location);
 
-	TArray<AWayPoint*> GetWayPointsFromWorld();
+	TArray<AWayPoint*> GetWayPointsFromWorld() const;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
+	UFUNCTION(BlueprintCallable, Category = EnemyWayPoints)
 	TArray<AWayPoint*> GetWayPointsForEnemy(const AActor* Enemy, int32 NumberOfWayPoints);
 
 };

@@ -62,7 +62,7 @@ TArray<AWayPoint*> AWayPointManager::SortStoredWayPointsByDistance(FVector Locat
 	return SortedWayPoints;
 }
 
-TArray<AWayPoint*> AWayPointManager::GetWayPointsFromWorld()
+TArray<AWayPoint*> AWayPointManager::GetWayPointsFromWorld() const
 {
 	TArray<AWayPoint*> WayPoints;
 

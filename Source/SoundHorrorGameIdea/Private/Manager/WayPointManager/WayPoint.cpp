@@ -12,18 +12,23 @@ AWayPoint::AWayPoint()
 	PrimaryActorTick.bCanEverTick = true;
 	WayPointLocation = GetActorLocation();
 
-	if (UWorld* World = GetWorld())
+	if(TargetPoint != nullptr)
 	{
-		if (UStaticMeshComponent* RootComp = Cast<UStaticMeshComponent>(GetRootComponent()))
-		{
-			const FVector Location = GetActorLocation() + FVector(0.f, 0.f, 100.f); // Offset the target point above the way point
-			const FRotator Rotation = FRotator::ZeroRotator;
-			if (ATargetPoint* TargetP = World->SpawnActor<ATargetPoint>(Location, Rotation))
-			{
-				TargetP->AttachToComponent(RootComp, FAttachmentTransformRules::KeepWorldTransform);
-			}
-		}
+		return;
 	}
+
+	/**
+	// Create a new TargetPoint component
+	ATargetPoint* NewTargetPoint = CreateDefaultSubobject<ATargetPoint>(TEXT("TargetPoint"));
+
+	// Attach the TargetPoint to the root component
+	if (NewTargetPoint != nullptr && GetRootComponent() != nullptr)
+	{
+		NewTargetPoint->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+	}
+
+	TargetPoint = NewTargetPoint;
+	**/
 }
 
 FVector3d AWayPoint::GetWayPointLocation() const
@@ -57,3 +62,25 @@ void AWayPoint::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
+void AWayPoint::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+
+	if(TargetPoint != nullptr)
+	{
+		return;
+	}
+
+	// Create a new TargetPoint component
+	ATargetPoint* NewTargetPoint = NewObject<ATargetPoint>(this);
+
+	// Attach the TargetPoint to the root component
+	if (NewTargetPoint != nullptr && GetRootComponent() != nullptr)
+	{
+		NewTargetPoint->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+	}
+
+	TargetPoint = NewTargetPoint;
+}
+
