@@ -36,6 +36,19 @@ FVector3d AWayPoint::GetWayPointLocation() const
 	return WayPointLocation;
 }
 
+FActionInfo AWayPoint::GetActionInfo() const
+{
+	// Create a new ActionInfo struct
+	FActionInfo MyActionInfo;
+	MyActionInfo.bIsWaiting = IsWaiting;
+	MyActionInfo.ActionType = WayPointType;
+	return MyActionInfo;
+}
+
+void AWayPoint::WayPointAction_Implementation()
+{
+}
+
 bool AWayPoint::IsUsed() const
 {
 	return Used;
@@ -63,10 +76,12 @@ void AWayPoint::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+
 void AWayPoint::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
 
+	
 	if(TargetPoint != nullptr)
 	{
 		return;
@@ -83,4 +98,3 @@ void AWayPoint::OnConstruction(const FTransform& Transform)
 
 	TargetPoint = NewTargetPoint;
 }
-

@@ -13,12 +13,14 @@ AWayPointManager::AWayPointManager()
 
 	// Find all WayPoint actors in the world and add them to the WayPoints array
 	StoredWayPoints = GetWayPointsFromWorld();
+	
 }
 
 // Called when the game starts or when spawned
 void AWayPointManager::BeginPlay()
 {
 	Super::BeginPlay();
+	
 }
 
 
@@ -108,4 +110,9 @@ TArray<AWayPoint*> AWayPointManager::GetWayPointsForEnemy(const AActor* Enemy, c
 		}
 	}
 	return WayPointsToReturn;
+}
+
+void AWayPointManager::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
 }
