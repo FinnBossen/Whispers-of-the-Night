@@ -34,5 +34,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = EnemyWayPoints)
 	TArray<AWayPoint*> GetWayPointsForEnemy(const AActor* Enemy, int32 NumberOfWayPoints);
+	
+	// OnConstruction methdo is called on construction of the actor and when the actor is spawned
+	virtual void OnConstruction(const FTransform &Transform) override;
 
 };

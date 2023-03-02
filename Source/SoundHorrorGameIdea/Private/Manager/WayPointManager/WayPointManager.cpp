@@ -11,16 +11,16 @@ AWayPointManager::AWayPointManager()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	// Find all WayPoint actors in the world and add them to the WayPoints array
+	// reloads the waypoints from the world on initialization
 	StoredWayPoints = GetWayPointsFromWorld();
-	
 }
 
 // Called when the game starts or when spawned
 void AWayPointManager::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	// reloads the waypoints from the world on begin play
+	StoredWayPoints = GetWayPointsFromWorld();
 }
 
 
@@ -64,11 +64,11 @@ TArray<AWayPoint*> AWayPointManager::SortStoredWayPointsByDistance(FVector Locat
 	return SortedWayPoints;
 }
 
+// Find all WayPoint actors in the world and add them to the WayPoints array
 TArray<AWayPoint*> AWayPointManager::GetWayPointsFromWorld() const
 {
 	TArray<AWayPoint*> WayPoints;
 
-	// Find all WayPoint actors in the world and add them to the WayPoints array
 	if (const UWorld* World = GetWorld())
 	{
 		for (TActorIterator<AWayPoint> IteratedWayPoint(World); IteratedWayPoint; ++IteratedWayPoint)
@@ -115,4 +115,6 @@ TArray<AWayPoint*> AWayPointManager::GetWayPointsForEnemy(const AActor* Enemy, c
 void AWayPointManager::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
+	// reloads the waypoints from the world on construction
+	StoredWayPoints = GetWayPointsFromWorld();
 }
