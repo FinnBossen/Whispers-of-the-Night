@@ -48,7 +48,7 @@ AWayPoint* AWayPointManager::GetNearestWayPointToLocation(const FVector& Locatio
 	return SortedWayPoints[0];
 }
 
-TArray<AWayPoint*> AWayPointManager::SortStoredWayPointsByDistance(FVector Location)
+TArray<AWayPoint*> AWayPointManager::SortStoredWayPointsByDistance(FVector Location) const
 {
 	TArray<AWayPoint*> SortedWayPoints;
 
@@ -56,10 +56,11 @@ TArray<AWayPoint*> AWayPointManager::SortStoredWayPointsByDistance(FVector Locat
 	SortedWayPoints.Append(StoredWayPoints);
 
 	// Sort the array of waypoints by distance from the location
-	StoredWayPoints.Sort([&Location](const AWayPoint& WayPoint1, const AWayPoint& WayPoint2)
+	SortedWayPoints.Sort([&Location](const AWayPoint& WayPoint1, const AWayPoint& WayPoint2)
 	{
 		return CompareWayPoints(WayPoint1, WayPoint2, Location);
 	});
+
 
 	return SortedWayPoints;
 }

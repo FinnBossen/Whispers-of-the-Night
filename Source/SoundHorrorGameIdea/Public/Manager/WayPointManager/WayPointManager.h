@@ -24,7 +24,7 @@ protected:
 
 	AWayPoint* GetNearestWayPointToLocation(const FVector& Location);
 
-	TArray<AWayPoint*> SortStoredWayPointsByDistance( FVector Location);
+	TArray<AWayPoint*> SortStoredWayPointsByDistance( FVector Location) const;
 
 	TArray<AWayPoint*> GetWayPointsFromWorld() const;
 

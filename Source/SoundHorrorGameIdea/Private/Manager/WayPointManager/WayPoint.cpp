@@ -68,6 +68,7 @@ ATargetPoint* AWayPoint::GetTargetPoint() const
 void AWayPoint::BeginPlay()
 {
 	Super::BeginPlay();
+	WayPointLocation = GetActorLocation();
 }
 
 // Called every frame
@@ -81,7 +82,7 @@ void AWayPoint::OnConstruction(const FTransform& Transform)
 {
 	Super::OnConstruction(Transform);
 
-	
+	WayPointLocation = GetActorLocation();
 	if(TargetPoint != nullptr)
 	{
 		return;
