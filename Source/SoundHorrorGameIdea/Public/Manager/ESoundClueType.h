@@ -12,4 +12,5 @@ enum class ESoundClueType: uint8
 	Breathing,
 	Confused,
 	Mumbling,
+	Crying,
 };

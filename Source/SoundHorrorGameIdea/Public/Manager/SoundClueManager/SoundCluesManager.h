@@ -9,16 +9,15 @@
 #include "SoundCluesManager.generated.h"
 
 UCLASS()
-class SOUNDHORRORGAMEIDEA_API ASoundCluesManager : public AActor
+class SOUNDHORRORGAMEIDEA_API ASoundCluesManager final : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
 	ASoundCluesManager();
-	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredSoundClues)
-	TArray<ASoundClue*> StoredSoundClues;
+	TArray<USoundClue*> StoredSoundClues;
 
 protected:
 	// Called when the game starts or when spawned
@@ -29,6 +28,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = StoredJumpScares)
-	ASoundClue* GetRandomSoundClueOfType(ESoundClueType ClueType);
+	USoundClue* GetRandomSoundClueOfType(ESoundClueType ClueType);
 
 };

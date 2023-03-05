@@ -4,18 +4,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
 #include "Manager/ESoundClueType.h"
 #include "SoundClue.generated.h"
 
 UCLASS()
-class SOUNDHORRORGAMEIDEA_API ASoundClue : public AActor
+class SOUNDHORRORGAMEIDEA_API USoundClue final : public UActorComponent
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ASoundClue();
+	explicit USoundClue(const FObjectInitializer& ObjectInitializer);
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
 	ESoundClueType SoundClueType;
@@ -24,16 +23,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sound)
 	USoundBase* Sound;
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void PlaySound() const;
+	void PlaySound(FVector Location) const;
 
 };

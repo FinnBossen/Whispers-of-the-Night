@@ -22,11 +22,12 @@ void ASoundCluesManager::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-ASoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType ClueType)
+USoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType ClueType)
 {
+	/*
 	// Get all sound clues of a specific type
-	TArray<ASoundClue*> SoundCluesOfType;
-	for (ASoundClue* SoundClue : StoredSoundClues)
+	TArray<ASoundClue> SoundCluesOfType;
+	for (ASoundClue SoundClue : StoredSoundClues)
 	{
 		if (SoundClue->SoundClueType == ClueType)
 		{
@@ -42,5 +43,7 @@ ASoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType Cl
 	}
 
 	// return nullptr if no sound clues of a specific type are found
+	return nullptr;
+	*/
 	return nullptr;
 }
