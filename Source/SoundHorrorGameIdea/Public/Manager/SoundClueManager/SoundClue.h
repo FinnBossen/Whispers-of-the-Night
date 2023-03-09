@@ -4,10 +4,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
 #include "Manager/ESoundClueType.h"
 #include "SoundClue.generated.h"
 
-UCLASS()
+UCLASS(EditInlineNew)
 class SOUNDHORRORGAMEIDEA_API USoundClue final : public UActorComponent
 {
 	GENERATED_BODY()
@@ -25,6 +26,6 @@ public:
 
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void PlaySound(FVector Location) const;
+	void PlaySound() const;
 
 };

@@ -16,7 +16,7 @@ class SOUNDHORRORGAMEIDEA_API ASoundCluesManager final : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ASoundCluesManager();
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredSoundClues)
+	UPROPERTY(EditAnywhere, Instanced, BlueprintReadWrite)
 	TArray<USoundClue*> StoredSoundClues;
 
 protected:

@@ -10,8 +10,8 @@ USoundClue::USoundClue(const FObjectInitializer& ObjectInitializer): Super(Objec
 }
 
 // Play the sound that is attached to the sound clue
-void USoundClue::PlaySound(const FVector Location) const
+void USoundClue::PlaySound() const
 {
-	UGameplayStatics::PlaySoundAtLocation(this, Sound, Location);
+	UGameplayStatics::PlaySoundAtLocation(this, Sound, GetOwner()->GetActorLocation());
 }
 

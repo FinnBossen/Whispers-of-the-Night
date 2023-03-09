@@ -10,17 +10,14 @@
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_Chair.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_Chair.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_TableRound.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_TableRound.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BPSoundClue.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BPSoundCluesManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BPSoundCluesManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/BK/8SUDGR02ASNYLQSMORQPNL.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/BK/8SUDGR02ASNYLQSMORQPNL.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/2G/UIIFO11R6EPY78CT58GAOG.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/2G/UIIFO11R6EPY78CT58GAOG.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BP_SoundClue.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BP_SoundClue.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoundHorrorGameIdea.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/SoundHorrorGameIdea.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundCluesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundCluesManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/ESoundClueType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/ESoundClueType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundCluesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundCluesManager.h" afterDir="false" />
     </list>
@@ -232,6 +229,10 @@
       <workItem from="1678043704758" duration="567000" />
       <workItem from="1678044354137" duration="736000" />
       <workItem from="1678045164775" duration="4162000" />
+      <workItem from="1678141253335" duration="1003000" />
+      <workItem from="1678217158235" duration="960000" />
+      <workItem from="1678225178108" duration="4694000" />
+      <workItem from="1678381056569" duration="1351000" />
     </task>
     <servers />
   </component>
@@ -264,38 +265,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>99</line>
+          <line>105</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>112</line>
+          <line>118</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>97</line>
+          <line>103</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>109</line>
+          <line>115</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>104</line>
+          <line>110</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp</url>
-          <line>64</line>
+          <line>70</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundCluesManager.cpp</url>
-          <line>39</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

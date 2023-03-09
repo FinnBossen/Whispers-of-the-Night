@@ -26,8 +26,8 @@ USoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType Cl
 {
 	/*
 	// Get all sound clues of a specific type
-	TArray<ASoundClue> SoundCluesOfType;
-	for (ASoundClue SoundClue : StoredSoundClues)
+	TArray<USoundClue*> SoundCluesOfType;
+	for (USoundClue* SoundClue : StoredSoundClues)
 	{
 		if (SoundClue->SoundClueType == ClueType)
 		{
