@@ -8,19 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BPSoundCluesManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BPSoundCluesManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BP_SoundClue.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/SoundClueManager/BP_SoundClue.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoundHorrorGameIdea.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/SoundHorrorGameIdea.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundCluesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundCluesManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/WayPointManager/WayPointManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundCluesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundCluesManager.h" afterDir="false" />
-    </list>
+    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +220,7 @@
       <workItem from="1678141253335" duration="1003000" />
       <workItem from="1678217158235" duration="960000" />
       <workItem from="1678225178108" duration="4694000" />
-      <workItem from="1678381056569" duration="1351000" />
+      <workItem from="1678381056569" duration="1950000" />
     </task>
     <servers />
   </component>
