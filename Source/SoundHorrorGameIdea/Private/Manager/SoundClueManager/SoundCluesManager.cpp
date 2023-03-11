@@ -24,7 +24,6 @@ void ASoundCluesManager::Tick(float DeltaTime)
 
 USoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType ClueType)
 {
-	/*
 	// Get all sound clues of a specific type
 	TArray<USoundClue*> SoundCluesOfType;
 	for (USoundClue* SoundClue : StoredSoundClues)
@@ -43,7 +42,5 @@ USoundClue* ASoundCluesManager::GetRandomSoundClueOfType(const ESoundClueType Cl
 	}
 
 	// return nullptr if no sound clues of a specific type are found
-	return nullptr;
-	*/
 	return nullptr;
 }
