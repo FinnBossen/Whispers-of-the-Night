@@ -24,8 +24,16 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sound)
 	USoundBase* Sound;
 
+
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void PlaySound() const;
+	void PlaySound();
+
+	//Play the sound
+	UFUNCTION(BlueprintCallable, Category = Sound)
+	void StopSound() const;
+private:
+	UPROPERTY(EditAnywhere, Category = Sound)
+	UAudioComponent* AudioComponent;
 
 };
