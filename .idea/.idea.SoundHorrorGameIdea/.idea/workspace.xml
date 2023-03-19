@@ -9,35 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Managers/JumpScareManager/Jumpscare/WB_JumpScare.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Managers/JumpScareManager/Jumpscare/WB_JumpScare.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/HeartBeat/heartbeat-6895__online-audio-converter_com_.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/HeartBeat/heartbeat-6895__online-audio-converter_com_.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/getting-hazey-while-drinking-wine-20396.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/getting-hazey-while-drinking-wine-20396.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/horror-sfx-01-63145.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/horror-sfx-01-63145.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/singing-ghost-2-90866.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/singing-ghost-2-90866.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/singing-ghost-90888.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/singing-ghost-90888.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/teeth-chatter-14492.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/teeth-chatter-14492.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/tension-30994.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/tension-30994.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/waking-up-a-little-hazy-30599.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/waking-up-a-little-hazy-30599.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/weird-laugh-107156.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Idle/weird-laugh-107156.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/glass-knock-71787.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/glass-knock-71787.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knock-on-door-6228.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knock-on-door-6228.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knock-on-the-door-knock-on-the-door-knock-on-the-door-knock-knock-14247.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knock-on-the-door-knock-on-the-door-knock-on-the-door-knock-knock-14247.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knocking-on-door-6022.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/knocking-on-door-6022.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/loud-knock-on-door-82328.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/loud-knock-on-door-82328.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/nice-simple-knock-on-door-85867.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/nice-simple-knock-on-door-85867.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/pounding-on-door-44023.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/pounding-on-door-44023.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/tapping-on-glass-31920.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Knocking/tapping-on-glass-31920.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/humpingsound.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/humpingsound.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/nearbychasing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/nearbychasing.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/walkingGrass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/walkingGrass.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/walkingIndoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Sounds/Steps/walkingIndoor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/E/X9/KFZYM5V1ZC1YCQSYHA2AQN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/E/X9/KFZYM5V1ZC1YCQSYHA2AQN.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/SoundClueManager/SoundClue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/Buttons/play-circle-outline.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/Buttons/play-outline.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/Buttons/stop-circle-outline.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/Buttons/stop-outline.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Note_Item.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Note_Item.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Notes.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Notes.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
