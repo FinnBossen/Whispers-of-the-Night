@@ -16,6 +16,8 @@ class SOUNDHORRORGAMEIDEA_API USoundClue final : public UActorComponent
 public:	
 	// Sets default values for this actor's properties
 	explicit USoundClue(const FObjectInitializer& ObjectInitializer);
+	//Begin Play Function
+	virtual void BeginPlay() override;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
 	ESoundClueType SoundClueType;
@@ -23,11 +25,10 @@ public:
 	// A sound that can be player
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sound)
 	USoundBase* Sound;
-
-
+	
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void PlaySound();
+	void PlaySound(AActor* Owner);
 
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
@@ -35,5 +36,8 @@ public:
 private:
 	UPROPERTY(EditAnywhere, Category = Sound)
 	UAudioComponent* AudioComponent;
+
+	UPROPERTY(EditAnywhere, Category = Sound)
+	USoundAttenuation* SoundAttenuationSettings;
 
 };
