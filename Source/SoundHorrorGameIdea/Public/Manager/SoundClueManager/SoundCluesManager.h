@@ -19,6 +19,9 @@ public:
 	UPROPERTY(EditAnywhere, Instanced, BlueprintReadWrite)
 	TArray<USoundClue*> StoredSoundClues;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundAttenuation* SoundAttenuationSettings;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
