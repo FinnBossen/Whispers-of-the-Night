@@ -22,7 +22,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
 	ESoundClueType SoundClueType;
 
-	// A sound that can be player
+	// A sound that can be played
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sound)
 	USoundBase* Sound;
 	
