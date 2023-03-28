@@ -17,9 +17,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
 	EVisualClueType VisualClueType;
 	
-	// A Texture as as a UProperty
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Texture)
-	UTexture2D* Texture;
+	// A Material as as a UProperty
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Material)
+	UMaterial* Material;
+	
 
 protected:
 	// Called when the game starts or when spawned
