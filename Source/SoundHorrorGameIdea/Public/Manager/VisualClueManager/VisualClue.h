@@ -3,10 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
 #include "Manager/EVisualClueType.h"
 #include "VisualClue.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(EditInlineNew, blueprintable)
 class SOUNDHORRORGAMEIDEA_API UVisualClue final : public UActorComponent
 {
 	GENERATED_BODY()
@@ -14,16 +15,14 @@ public:
 	// Sets default values for this actor's properties
 	explicit UVisualClue(const FObjectInitializer& ObjectInitializer);
 
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
 	EVisualClueType VisualClueType;
 	
 	// A Material as as a UProperty
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Material)
 	UMaterial* Material;
-	
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 	
 };

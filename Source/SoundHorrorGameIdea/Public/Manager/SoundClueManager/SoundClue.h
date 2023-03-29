@@ -8,7 +8,7 @@
 #include "Manager/ESoundClueType.h"
 #include "SoundClue.generated.h"
 
-UCLASS(EditInlineNew)
+UCLASS(EditInlineNew, blueprintable)
 class SOUNDHORRORGAMEIDEA_API USoundClue final : public UActorComponent
 {
 	GENERATED_BODY()

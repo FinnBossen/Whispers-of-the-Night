@@ -9,18 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Managers/VisualClueManager/BP_VisualCueManager.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/Blood/simplisticBlood.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/Blood/simplisticBlood.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/FingerPrint/simplisticFingerPrints.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/FingerPrint/simplisticFingerPrints.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/HighHeelFootPrinz.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/HighHeelFootPrinz.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/SneakerFootPrint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/SneakerFootPrint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/barefootFootPrint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/barefootFootPrint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/shoeFootPrint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/FootPrints/shoeFootPrint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/Hands/HandBloody.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/Hands/HandBloody.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VisualClue/Hands/normalHand.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VisualClue/Hands/normalHand.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/VisualClueManager/VisualCueManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/VisualClueManager/VisualCueManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/VisualClueManager/VisualClue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/VisualClueManager/VisualClue.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/VisualClueManager/VisualClue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/VisualClueManager/VisualClue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/VisualClueManager/VisualCueManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/VisualClueManager/VisualCueManager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +234,8 @@
       <workItem from="1679752979305" duration="3551000" />
       <workItem from="1679783326126" duration="3779000" />
       <workItem from="1679955242352" duration="1410000" />
-      <workItem from="1680036640029" duration="1070000" />
+      <workItem from="1680036640029" duration="1319000" />
+      <workItem from="1680118579824" duration="1056000" />
     </task>
     <servers />
   </component>

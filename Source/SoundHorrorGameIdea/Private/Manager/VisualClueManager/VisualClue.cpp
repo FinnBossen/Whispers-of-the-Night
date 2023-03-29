@@ -9,10 +9,7 @@ UVisualClue::UVisualClue(const FObjectInitializer& ObjectInitializer): Super(Obj
 	
 }
 
-// Called when the game starts or when spawned
 void UVisualClue::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
-
