@@ -7,4 +7,5 @@ enum class EVisualClueType: uint8
 	FootPrints,
 	FingerPrints,
 	BloodPrints,
+	HandPrints,
 };

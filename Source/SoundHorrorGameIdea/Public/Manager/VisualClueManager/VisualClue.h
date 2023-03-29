@@ -18,7 +18,7 @@ public:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundType)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = VisualType)
 	EVisualClueType VisualClueType;
 	
 	// A Material as as a UProperty
