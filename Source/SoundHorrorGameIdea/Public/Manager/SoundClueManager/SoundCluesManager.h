@@ -30,7 +30,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION(BlueprintCallable, Category = StoredJumpScares)
+	UFUNCTION(BlueprintCallable, Category = StoredSoudClues)
 	USoundClue* GetRandomSoundClueOfType(ESoundClueType ClueType);
 
 };

@@ -33,11 +33,18 @@ public:
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
 	void StopSound() const;
+
+	//Play the sound
+	UFUNCTION(BlueprintCallable, Category = Sound)
+	bool IsHeardByPlayer() const;
 private:
 	UPROPERTY(EditAnywhere, Category = Sound)
 	UAudioComponent* AudioComponent;
 
 	UPROPERTY(EditAnywhere, Category = Sound)
 	USoundAttenuation* SoundAttenuationSettings;
+
+	UPROPERTY(EditAnywhere, Category = Sound)
+	AActor* PlayerActor;
 
 };
