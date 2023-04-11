@@ -3,42 +3,50 @@
 
 #include "Helper/GeneralFunctions.h"
 #include "Enemy/GhostEnemy.h"
+#include "Engine/SCS_Node.h"
 #include "Kismet/GameplayStatics.h"
 #include "Manager/SoundClueManager/SoundCluesManager.h"
 
-TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing() const
+TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AActor* ActorCallingFunction)
 {
 	// Get All SoundClues in World
-	TArray<AActor*> SoundCluesActors;
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ASoundCluesManager::StaticClass(), SoundCluesActors);
+	TArray<AActor*> EnemyActors;
+	UGameplayStatics::GetAllActorsOfClass(ActorCallingFunction->GetWorld(), AGhostEnemy::StaticClass(), EnemyActors);
 
 	// Check All SoundClues if they are heard by the player
 	TArray<AGhostEnemy*> HeardGhostEnemies;
-	for (AActor* SoundCluesActor : SoundCluesActors)
+	for (AActor* EnemyActor : EnemyActors)
 	{
-		// Cast SoundClue to SoundCluesManager
-		const USoundClue* SoundClue = Cast<USoundClue>(SoundCluesActor);
-		// Check if SoundClue is valid
-		if (SoundClue == nullptr)
-		{
-			UE_LOG(LogTemp, Error, TEXT("SoundClue is nullptr"));
-			continue;
-		}
 
-		// Check if SoundClue is SoundClue Parent is attached to a GhostEnemy
-		AGhostEnemy* GhostEnemy = Cast<AGhostEnemy>(SoundClue->GetOwner());
-		// Check if GhostEnemy is valid
-		if (GhostEnemy == nullptr)
-		{
-			// SoundClue is not attached to GhostEnemy and can be ignored
-			UE_LOG(LogTemp, Display, TEXT("Could not find GhostEnemy as Owmer of SoundClue Owner is: %s"), *SoundClue->GetOwner()->GetName());
-			continue;
-		}
+		AGhostEnemy* GhostEnemy = Cast<AGhostEnemy>(EnemyActor);
+		const AActor* ClassDefault = GhostEnemy->GetClass()->GetDefaultObject<AActor>();
+		TArray<UActorComponent*> SoundClues;
+		const USoundClue* StaticMeshComponent = GhostEnemy->FindComponentByClass<USoundClue>();
 
-		// Check if SoundClue is heard by the player
-		if (SoundClue->IsHeardByPlayer())
+		UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *StaticMeshComponent->GetName());
+		
+		for (const UActorComponent* SoundClue : SoundClues)
 		{
+			//Cast SoundClue to USoundClue
+			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundClue);
+			if (SoundClueCast == nullptr)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *EnemyActor->GetName());
+				continue;
+			}
+			// Check if SoundClue is heard by the player
+			if (!SoundClueCast->IsHeardByPlayer())
+			{
+				continue;
+			}
+
 			// Add GhostEnemy to Array
+		
+			if (GhostEnemy == nullptr)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to AGhostEnemy Actor: %s"), *EnemyActor->GetName());
+				continue;
+			}
 			HeardGhostEnemies.Add(GhostEnemy);
 		}
 	}
@@ -46,6 +54,38 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing() const
 	// Filter Array for duplicates
 	RemoveDuplicatesInArray(HeardGhostEnemies);
 	return HeardGhostEnemies;
+}
+
+bool UGeneralFunctions::GetClassBlueprintComponents(const TSubclassOf<UObject> ObjectClass, TArray<UActorComponent*>& OutComponents)
+{
+	if (!ensureAlwaysMsgf(ObjectClass, TEXT("Cannot get blueprint components of a null class.")))
+	{
+		return false;
+	}
+
+	if (UBlueprintGeneratedClass* BlueprintClass = Cast<UBlueprintGeneratedClass>(ObjectClass))
+	{
+		// Retrieve the hierarchy of blueprint classes for this CDO.
+		TArray<const UBlueprintGeneratedClass*> BlueprintClasses;
+		UBlueprintGeneratedClass::GetGeneratedClassesHierarchy(BlueprintClass, BlueprintClasses);
+		for (const UBlueprintGeneratedClass* Class : BlueprintClasses)
+		{
+			if (Class->SimpleConstructionScript)
+			{
+				// And now we get the component from the nodes.
+				TArray<USCS_Node*> CDONodes = Class->SimpleConstructionScript->GetAllNodes();
+				for (USCS_Node* Node : CDONodes)
+				{
+					UActorComponent* CDOComponent = Node->GetActualComponentTemplate(BlueprintClass);
+					OutComponents.Add(CDOComponent);
+				}
+			}
+		}
+
+		return true;
+	}
+
+	return false;
 }
 
 template <typename T>

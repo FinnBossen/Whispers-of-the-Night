@@ -17,9 +17,12 @@ class SOUNDHORRORGAMEIDEA_API UGeneralFunctions : public UBlueprintFunctionLibra
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	TArray<AGhostEnemy*> GetAllEnemiesThePlayerIsHearing() const;
+	static TArray<AGhostEnemy*> GetAllEnemiesThePlayerIsHearing(const AActor* ActorCallingFunction);
 	
 	template <typename T>
 	UFUNCTION(BlueprintCallable, Category = Array)
 	static void  RemoveDuplicatesInArray(TArray<T>& InArray);
+
+	UFUNCTION(BlueprintCallable, Category = Array)
+	static bool GetClassBlueprintComponents(TSubclassOf<UObject> ObjectClass, TArray<UActorComponent*>& OutComponents);
 };
