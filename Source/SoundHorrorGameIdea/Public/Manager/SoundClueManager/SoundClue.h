@@ -37,6 +37,10 @@ public:
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
 	bool IsHeardByPlayer() const;
+
+	//Play the sound
+	UFUNCTION(BlueprintCallable, Category = Sound)
+	float HearingDistancePercentage() const;
 private:
 	UPROPERTY(EditAnywhere, Category = Sound)
 	UAudioComponent* AudioComponent;

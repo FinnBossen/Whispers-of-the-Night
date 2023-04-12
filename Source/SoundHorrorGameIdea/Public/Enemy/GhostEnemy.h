@@ -33,6 +33,9 @@ public:
 	UFUNCTION( Category = Sound)
 	TMap<ESoundClueType, USoundClue*> GetSoundClues() const;
 
+	UFUNCTION(BlueprintCallable, Category = Sound)
+	float GetNearestSoundCluePercentage() const;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundCluesStoredAtEnemy)
 	TMap<ESoundClueType, USoundClue*> SoundClues;
 

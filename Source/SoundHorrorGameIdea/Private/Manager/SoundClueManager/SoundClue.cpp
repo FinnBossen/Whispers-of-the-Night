@@ -104,3 +104,23 @@ bool USoundClue::IsHeardByPlayer() const
 
 	return true;
 }
+
+float USoundClue::HearingDistancePercentage() const
+{
+	const FVector AudioComponentLocation = AudioComponent->GetComponentLocation();
+
+	const FVector GetPlayerLocation = PlayerActor->GetActorLocation();
+
+	const float DistanceBetweenAudioAndPlayer = AudioComponentLocation.Distance(AudioComponentLocation, GetPlayerLocation);
+
+	if (SoundAttenuationSettings == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No AttenuationSettings set for SoundClue: %s"), *GetName());
+		return 0;
+	}
+
+	const float MaxAudibleDistance = SoundAttenuationSettings->Attenuation.GetMaxDimension();
+
+	// Return me a percentage between the difference of DistanceBetweenAudioAndPlayer and MaxAudibleDistance, I want to return 100 when the player is at the same location as the audio component and 0 when the player is at the max audible distance
+	return 100 - (DistanceBetweenAudioAndPlayer / MaxAudibleDistance) * 100;
+}
