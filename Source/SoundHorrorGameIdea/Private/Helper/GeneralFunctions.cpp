@@ -19,16 +19,12 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AA
 	{
 
 		AGhostEnemy* GhostEnemy = Cast<AGhostEnemy>(EnemyActor);
-		const AActor* ClassDefault = GhostEnemy->GetClass()->GetDefaultObject<AActor>();
-		TArray<UActorComponent*> SoundClues;
-		const USoundClue* StaticMeshComponent = GhostEnemy->FindComponentByClass<USoundClue>();
-
-		UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *StaticMeshComponent->GetName());
 		
-		for (const UActorComponent* SoundClue : SoundClues)
+		
+		for (const auto& SoundCluePair  : GhostEnemy->GetSoundClues())
 		{
 			//Cast SoundClue to USoundClue
-			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundClue);
+			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
 			if (SoundClueCast == nullptr)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *EnemyActor->GetName());

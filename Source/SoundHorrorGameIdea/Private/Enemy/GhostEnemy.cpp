@@ -32,3 +32,8 @@ void AGhostEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 }
 
+TMap<ESoundClueType, USoundClue*> AGhostEnemy::GetSoundClues() const
+{
+	return SoundClues;
+}
+

@@ -23,19 +23,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
-
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	UFUNCTION( Category = Sound)
+	TMap<ESoundClueType, USoundClue*> GetSoundClues() const;
 
-	UPROPERTY(EditAnywhere, Category = SoundCluesStoredAtEnemy)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundCluesStoredAtEnemy)
 	TMap<ESoundClueType, USoundClue*> SoundClues;
 
-	UPROPERTY(EditAnywhere, Category = VisualCluesStoredAtEnemy)
-	TMap<EVisualClueType, UVisualClue*> VisualClues;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = VisualCluesStoredAtEnemy)
+	TMap<EVisualClueType, UVisualClue*> VisualClues;
 };
