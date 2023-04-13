@@ -2,10 +2,8 @@
 
 #include "Controller/SoundHorrorGameIdeaPlayerController.h"
 
-#include "AnimPose.h"
 #include "GameFramework/Pawn.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
-#include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "SoundHorrorGameIdea/Public/Character/SoundHorrorGameIdeaCharacter.h"
 #include "Engine/World.h"
@@ -36,6 +34,11 @@ void ASoundHorrorGameIdeaPlayerController::BeginPlay()
 	{
 		Subsystem->AddMappingContext(DefaultMappingContext, 0);
 	}
+}
+
+FRotator ASoundHorrorGameIdeaPlayerController::GetMouseRotation() const
+{
+	return LastMouseRotation;
 }
 
 void ASoundHorrorGameIdeaPlayerController::SetupInputComponent()

@@ -25,4 +25,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Array)
 	static bool GetClassBlueprintComponents(TSubclassOf<UObject> ObjectClass, TArray<UActorComponent*>& OutComponents);
+	
+	UFUNCTION(BlueprintCallable, Category = Vector2D)
+    static float GetAngleBetweenTwoVector2D(FVector2D VectorA, FVector2D VectorB);
 };

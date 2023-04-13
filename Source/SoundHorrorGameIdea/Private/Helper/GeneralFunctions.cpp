@@ -106,3 +106,15 @@ void UGeneralFunctions::RemoveDuplicatesInArray(TArray<T>& InArray)
 	}
 }
 
+
+float UGeneralFunctions::GetAngleBetweenTwoVector2D(const FVector2D VectorA, const FVector2D VectorB)
+{
+	const float DotProduct = FVector2D::DotProduct(VectorA, VectorB);
+
+	// Calculate the angle between the two vectors in radians
+	const float AngleRadians = FMath::Atan2(VectorB.Y * VectorA.X - VectorB.X * VectorA.Y, DotProduct);
+
+	// Convert the angle from radians to degrees and return it
+	const float AngleDegrees = FMath::RadiansToDegrees(AngleRadians);
+	return AngleDegrees;
+}
