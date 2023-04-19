@@ -59,7 +59,7 @@ public:
 	class UInputAction* SetDestinationTouchAction;
 
 	UFUNCTION(BlueprintCallable, Category = Input)
-	FRotator GetMouseRotation() const;
+	FRotator GetRealMouseRotation() const;
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */
 	uint32 bMoveToMouseCursor : 1;

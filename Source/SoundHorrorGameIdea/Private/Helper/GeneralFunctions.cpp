@@ -17,11 +17,10 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AA
 	TArray<AGhostEnemy*> HeardGhostEnemies;
 	for (AActor* EnemyActor : EnemyActors)
 	{
-
 		AGhostEnemy* GhostEnemy = Cast<AGhostEnemy>(EnemyActor);
-		
-		
-		for (const auto& SoundCluePair  : GhostEnemy->GetSoundClues())
+
+
+		for (const auto& SoundCluePair : GhostEnemy->GetSoundClues())
 		{
 			//Cast SoundClue to USoundClue
 			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
@@ -37,7 +36,7 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AA
 			}
 
 			// Add GhostEnemy to Array
-		
+
 			if (GhostEnemy == nullptr)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to AGhostEnemy Actor: %s"), *EnemyActor->GetName());
@@ -52,7 +51,8 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AA
 	return HeardGhostEnemies;
 }
 
-bool UGeneralFunctions::GetClassBlueprintComponents(const TSubclassOf<UObject> ObjectClass, TArray<UActorComponent*>& OutComponents)
+bool UGeneralFunctions::GetClassBlueprintComponents(const TSubclassOf<UObject> ObjectClass,
+                                                    TArray<UActorComponent*>& OutComponents)
 {
 	if (!ensureAlwaysMsgf(ObjectClass, TEXT("Cannot get blueprint components of a null class.")))
 	{
@@ -109,12 +109,18 @@ void UGeneralFunctions::RemoveDuplicatesInArray(TArray<T>& InArray)
 
 float UGeneralFunctions::GetAngleBetweenTwoVector2D(const FVector2D VectorA, const FVector2D VectorB)
 {
-	const float DotProduct = FVector2D::DotProduct(VectorA, VectorB);
+	const float AngleRadians = FMath::Atan2(VectorB.Y - VectorA.Y, VectorB.X - VectorA.X);
+	return FMath::RadiansToDegrees(AngleRadians);
+}
 
-	// Calculate the angle between the two vectors in radians
-	const float AngleRadians = FMath::Atan2(VectorB.Y * VectorA.X - VectorB.X * VectorA.Y, DotProduct);
+void UGeneralFunctions::GetActorScreenLocation(AActor* Actor, FVector2D& ActorScreenLocation)
+{
+	// Get a reference to the player controller
+	const APlayerController* PlayerController = Actor->GetWorld()->GetFirstPlayerController();
 
-	// Convert the angle from radians to degrees and return it
-	const float AngleDegrees = FMath::RadiansToDegrees(AngleRadians);
-	return AngleDegrees;
+	// Get the world location of the actor you want to convert
+	const FVector ActorWorldLocation = Actor->GetActorLocation();
+
+	// Convert the world location to screen location
+	UGameplayStatics::ProjectWorldToScreen(PlayerController, ActorWorldLocation, ActorScreenLocation);
 }

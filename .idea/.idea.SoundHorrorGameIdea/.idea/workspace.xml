@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Controller/SoundHorrorGameIdeaPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Controller/SoundHorrorGameIdeaPlayerController.h" afterDir="false" />
@@ -253,7 +253,11 @@
       <workItem from="1681239964449" duration="325000" />
       <workItem from="1681241368179" duration="744000" />
       <workItem from="1681326202637" duration="5556000" />
-      <workItem from="1681419680246" duration="1539000" />
+      <workItem from="1681419680246" duration="1724000" />
+      <workItem from="1681835189036" duration="1859000" />
+      <workItem from="1681843356722" duration="635000" />
+      <workItem from="1681849853943" duration="1016000" />
+      <workItem from="1681938023178" duration="3632000" />
     </task>
     <servers />
   </component>
@@ -303,6 +307,11 @@
           <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/SoundClueManager/SoundClue.cpp</url>
           <line>117</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp</url>
+          <line>27</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

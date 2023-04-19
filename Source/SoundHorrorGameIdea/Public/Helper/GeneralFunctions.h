@@ -28,4 +28,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = Vector2D)
     static float GetAngleBetweenTwoVector2D(FVector2D VectorA, FVector2D VectorB);
+
+	UFUNCTION(BlueprintCallable, Category = "Actor")
+	static void GetActorScreenLocation(AActor* Actor, FVector2D& ActorScreenLocation);
 };

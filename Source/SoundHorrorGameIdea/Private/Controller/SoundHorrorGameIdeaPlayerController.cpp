@@ -36,9 +36,10 @@ void ASoundHorrorGameIdeaPlayerController::BeginPlay()
 	}
 }
 
-FRotator ASoundHorrorGameIdeaPlayerController::GetMouseRotation() const
+// Returns the mouse rotation not adjusted for player model
+FRotator ASoundHorrorGameIdeaPlayerController::GetRealMouseRotation() const
 {
-	return LastMouseRotation;
+	return LastMouseRotation + FRotator(0,90,0);
 }
 
 void ASoundHorrorGameIdeaPlayerController::SetupInputComponent()
