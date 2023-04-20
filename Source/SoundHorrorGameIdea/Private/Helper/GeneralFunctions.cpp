@@ -124,3 +124,14 @@ void UGeneralFunctions::GetActorScreenLocation(AActor* Actor, FVector2D& ActorSc
 	// Convert the world location to screen location
 	UGameplayStatics::ProjectWorldToScreen(PlayerController, ActorWorldLocation, ActorScreenLocation);
 }
+
+float UGeneralFunctions::GetFloatDifference(const float FloatA, const float FloatB)
+{
+	const float Difference = FMath::Abs(FloatA - FloatB);
+	return Difference;
+}
+
+float UGeneralFunctions::GetMaxFloat()
+{
+	return MAX_FLT;
+}

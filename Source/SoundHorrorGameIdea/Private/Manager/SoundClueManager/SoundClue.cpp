@@ -65,6 +65,30 @@ void USoundClue::StopSound() const
 	}
 }
 
+void USoundClue::MuteSound() const
+{
+	// Mute	sound
+	if (AudioComponent == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No AudioComponent is set for SoundClue: %s"), *GetName());
+		return;
+	}
+
+	AudioComponent->SetVolumeMultiplier(0.0f);
+}
+
+void USoundClue::UnMuteSound() const
+{
+	// Unmute Sound
+	if (AudioComponent == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No AudioComponent is set for SoundClue: %s"), *GetName());
+		return;
+	}
+
+	AudioComponent->SetVolumeMultiplier(1.0f);
+}
+
 bool USoundClue::IsHeardByPlayer() const
 {
 	if (AudioComponent == nullptr)
@@ -77,7 +101,7 @@ bool USoundClue::IsHeardByPlayer() const
 	{
 		return false;
 	}
-	
+
 	if (PlayerActor == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("No PlayerActor is set for SoundClue: %s"), *GetName());
@@ -88,12 +112,14 @@ bool USoundClue::IsHeardByPlayer() const
 
 	const FVector GetPlayerLocation = PlayerActor->GetActorLocation();
 
-	const float DistanceBetweenAudioAndPlayer = AudioComponentLocation.Distance(AudioComponentLocation, GetPlayerLocation);
+	const float DistanceBetweenAudioAndPlayer = AudioComponentLocation.Distance(
+		AudioComponentLocation, GetPlayerLocation);
 
 	if (SoundAttenuationSettings == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("No AttenuationSettings set for SoundClue: %s"), *GetName());
 	}
+
 	// Get the maximum audible distance of the audioComponent
 	const float MaxAudibleDistance = SoundAttenuationSettings->Attenuation.GetMaxDimension();
 
@@ -111,7 +137,8 @@ float USoundClue::HearingDistancePercentage() const
 
 	const FVector GetPlayerLocation = PlayerActor->GetActorLocation();
 
-	const float DistanceBetweenAudioAndPlayer = AudioComponentLocation.Distance(AudioComponentLocation, GetPlayerLocation);
+	const float DistanceBetweenAudioAndPlayer = AudioComponentLocation.Distance(
+		AudioComponentLocation, GetPlayerLocation);
 
 	if (SoundAttenuationSettings == nullptr)
 	{

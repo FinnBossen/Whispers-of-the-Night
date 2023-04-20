@@ -31,4 +31,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Actor")
 	static void GetActorScreenLocation(AActor* Actor, FVector2D& ActorScreenLocation);
+	
+	UFUNCTION(BlueprintCallable, Category = "Math|Float")
+	static float GetFloatDifference(float FloatA, float FloatB);
+
+	UFUNCTION(BlueprintCallable, Category = "Math|Float")
+	static float GetMaxFloat();
 };

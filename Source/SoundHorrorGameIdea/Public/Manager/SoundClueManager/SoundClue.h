@@ -36,6 +36,14 @@ public:
 
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
+	void MuteSound() const;
+	
+	//Play the sound
+	UFUNCTION(BlueprintCallable, Category = Sound)
+	void UnMuteSound() const;
+	
+	//Find out if Heard by player
+	UFUNCTION(BlueprintCallable, Category = Sound)
 	bool IsHeardByPlayer() const;
 
 	//Play the sound
