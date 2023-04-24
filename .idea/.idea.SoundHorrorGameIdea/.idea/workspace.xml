@@ -9,9 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Input/Actions/IA_FOCUS_HOLD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Input/IMC_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +260,7 @@
       <workItem from="1681849853943" duration="1016000" />
       <workItem from="1681938023178" duration="3949000" />
       <workItem from="1682012144029" duration="4878000" />
-      <workItem from="1682348729623" duration="1938000" />
+      <workItem from="1682348729623" duration="3142000" />
     </task>
     <servers />
   </component>
