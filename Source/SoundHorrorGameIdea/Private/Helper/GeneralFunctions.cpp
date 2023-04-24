@@ -51,6 +51,57 @@ TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AA
 	return HeardGhostEnemies;
 }
 
+void UGeneralFunctions::MuteAllEnemiesInArrayExceptSelected(TArray<AGhostEnemy*> GhostEnemies,
+                                                            AGhostEnemy* GhostSelected)
+{
+	// Remove GhostSelected from Array
+	GhostEnemies.Remove(GhostSelected);
+	// Mute all GhostEnemies in Array
+	MuteAllEnemiesInArray(GhostEnemies);
+}
+
+void UGeneralFunctions::MuteAllEnemiesInArray(TArray<AGhostEnemy*> GhostEnemies)
+{
+	// Loop through all GhostEnemies
+	for (const AGhostEnemy* GhostEnemy : GhostEnemies)
+	{
+		// Loop through all SoundClues of the GhostEnemy
+		for (const auto& SoundCluePair : GhostEnemy->GetSoundClues())
+		{
+			// Cast SoundClue to USoundClue
+			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
+			if (SoundClueCast == nullptr)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *GhostEnemy->GetName());
+				continue;
+			}
+			// Mute SoundClue
+			SoundClueCast->MuteSound();
+		}
+	}
+}
+
+void UGeneralFunctions::UnMuteAllEnemiesInArray(TArray<AGhostEnemy*> GhostEnemies)
+{
+	// Loop through all GhostEnemies
+	for (const AGhostEnemy* GhostEnemy : GhostEnemies)
+	{
+		// Loop through all SoundClues of the GhostEnemy
+		for (const auto& SoundCluePair : GhostEnemy->GetSoundClues())
+		{
+			// Cast SoundClue to USoundClue
+			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
+			if (SoundClueCast == nullptr)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *GhostEnemy->GetName());
+				continue;
+			}
+			// UnMute SoundClue
+			SoundClueCast->UnMuteSound();
+		}
+	}
+}
+
 bool UGeneralFunctions::GetClassBlueprintComponents(const TSubclassOf<UObject> ObjectClass,
                                                     TArray<UActorComponent*>& OutComponents)
 {
