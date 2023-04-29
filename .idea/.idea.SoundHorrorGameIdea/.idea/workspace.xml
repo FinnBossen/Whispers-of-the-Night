@@ -8,7 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="" />
+    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/3DUI/3D-UI.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/3DUI/3DUIText.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/3DUI/Trigger.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Maps/MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Maps/MainMenu.umap" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,6 +259,8 @@
       <workItem from="1681938023178" duration="3949000" />
       <workItem from="1682012144029" duration="4878000" />
       <workItem from="1682348729623" duration="3747000" />
+      <workItem from="1682526515225" duration="787000" />
+      <workItem from="1682773823692" duration="369000" />
     </task>
     <servers />
   </component>
