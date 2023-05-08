@@ -32,7 +32,6 @@ void USoundClue::BeginPlay()
 }
 
 // Play the sound that is attached to the sound clue
-
 void USoundClue::PlaySound(AActor* Owner)
 {
 	if (AudioComponent != nullptr)
@@ -51,6 +50,7 @@ void USoundClue::PlaySound(AActor* Owner)
 	AudioComponent->AttachToComponent(OwnerRootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 	AudioComponent->RegisterComponent();
 }
+
 
 void USoundClue::StopSound() const
 {
