@@ -110,6 +110,29 @@ void ASoundHorrorGameIdeaPlayerController::Move(const FInputActionValue& Value)
 	}
 }
 
+FVector ASoundHorrorGameIdeaPlayerController::GetTouchOrMousePosition()
+{
+	// We look for the location in the world where the player has is mouse or touch cursor
+	FHitResult Hit;
+	bool bHitSuccessful;
+	if (bIsTouch)
+	{
+		bHitSuccessful = GetHitResultUnderFinger(ETouchIndex::Touch1, ECollisionChannel::ECC_Visibility, true, Hit);
+	}
+	else
+	{
+		bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
+	}
+
+	// If we hit a surface, cache the location
+	if (bHitSuccessful)
+	{
+		return  Hit.Location;
+	}
+
+	return FVector(0, 0, 0);
+}
+
 void ASoundHorrorGameIdeaPlayerController::OnRotateToMouse(const FInputActionValue& Value)
 {
 	if (const APawn* ControlledPawn = GetPawn(); ControlledPawn != nullptr)
@@ -140,22 +163,10 @@ void ASoundHorrorGameIdeaPlayerController::OnSetDestinationTriggered()
 	// We flag that the input is being pressed
 	FollowTime += GetWorld()->GetDeltaSeconds();
 
-	// We look for the location in the world where the player has pressed the input
-	FHitResult Hit;
-	bool bHitSuccessful;
-	if (bIsTouch)
-	{
-		bHitSuccessful = GetHitResultUnderFinger(ETouchIndex::Touch1, ECollisionChannel::ECC_Visibility, true, Hit);
-	}
-	else
-	{
-		bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
-	}
-
 	// If we hit a surface, cache the location
-	if (bHitSuccessful)
+	if (const FVector MousePosition = GetTouchOrMousePosition(); MousePosition != FVector(0, 0, 0))
 	{
-		CachedDestination = Hit.Location;
+		CachedDestination = MousePosition;
 	}
 
 	// Move towards mouse pointer or touch

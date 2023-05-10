@@ -49,7 +49,7 @@ float AGhostEnemy::GetNearestSoundCluePercentage() const
 	}
 
 	// Get Highest Percentage in SoundCluePercentages
-	float HighestPercentage = 0.0f;
+float HighestPercentage = 0.0f;
 	for (const auto& SoundCluePercentage : SoundCluePercentages)
 	{
 		if (SoundCluePercentage > HighestPercentage)

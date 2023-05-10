@@ -3,6 +3,7 @@
 
 #include "Manager/SoundClueManager/SoundCluesManager.h"
 
+
 // Sets default values
 ASoundCluesManager::ASoundCluesManager()
 {

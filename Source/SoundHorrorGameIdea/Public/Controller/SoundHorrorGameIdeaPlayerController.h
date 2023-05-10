@@ -77,8 +77,13 @@ protected:
 	void OnTouchReleased();
 	void OnRotateToMouse(const FInputActionValue& Value);
 
+	UFUNCTION(BlueprintCallable, Category = Input)
+	FVector GetTouchOrMousePosition();
+
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
+	
+
 
 private:
 	FVector CachedDestination;

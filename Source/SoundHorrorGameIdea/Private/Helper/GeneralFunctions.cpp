@@ -6,6 +6,7 @@
 #include "Engine/SCS_Node.h"
 #include "Kismet/GameplayStatics.h"
 #include "Manager/SoundClueManager/SoundCluesManager.h"
+#include "PhysicsEngine/PhysicsSettings.h"
 
 TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AActor* ActorCallingFunction)
 {
@@ -185,4 +186,46 @@ float UGeneralFunctions::GetFloatDifference(const float FloatA, const float Floa
 float UGeneralFunctions::GetMaxFloat()
 {
 	return MAX_FLT;
+}
+
+FVector UGeneralFunctions::CalculateLaunchVelocity(const FVector Start, const FVector End, float LaunchSpeed)
+{
+	FVector Direction = (End - Start).GetSafeNormal(); // Get direction to target
+	float Distance = (End - Start).Size(); // Get distance to target
+
+	// Calculate the height difference
+	float Height = Start.Z - End.Z;
+
+	// Calculate horizontal distance
+	float HorizontalDistance = FMath::Sqrt(Distance * Distance - Height * Height);
+
+	// Get gravity from the physics settings, making it positive as it's returned as a negative value
+	float Gravity = -GetDefault<UPhysicsSettings>()->DefaultGravityZ;
+
+	// Quadratic formula to determine launch angle
+	float UnderRoot = (LaunchSpeed * LaunchSpeed * LaunchSpeed * LaunchSpeed) - Gravity * (Gravity * HorizontalDistance * HorizontalDistance + 2 * Height * LaunchSpeed * LaunchSpeed);
+	float AngleRadians;
+	if(UnderRoot >= 0)
+	{
+		AngleRadians = FMath::Atan((LaunchSpeed * LaunchSpeed - FMath::Sqrt(UnderRoot)) / (Gravity * HorizontalDistance));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No solution found!"));
+		return FVector::ZeroVector;
+	}
+
+	// Calculate speed for x and y (horizontal)
+	float SpeedXY = HorizontalDistance / FMath::Cos(AngleRadians);
+
+	// Solve for speed in z (vertical)
+	float SpeedZ = FMath::Sqrt((Gravity * Distance * Distance) / (2.0f * (HorizontalDistance * FMath::Tan(AngleRadians) - Height)));
+
+	// Create velocity vector in local space
+	FVector Velocity(SpeedXY * FMath::Cos(AngleRadians), SpeedXY * FMath::Sin(AngleRadians), SpeedZ);
+
+	// Rotate velocity vector to target direction
+	Velocity = Velocity.RotateAngleAxis(-FMath::RadiansToDegrees(FMath::Atan2(Direction.Y, Direction.X)) + 90.0f, FVector(0.0f, 0.0f, 1.0f));
+
+	return Velocity;
 }
