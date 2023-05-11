@@ -188,44 +188,46 @@ float UGeneralFunctions::GetMaxFloat()
 	return MAX_FLT;
 }
 
-FVector UGeneralFunctions::CalculateLaunchVelocity(const FVector Start, const FVector End, float LaunchSpeed)
+FVector UGeneralFunctions::CalculateLaunchVelocity(FVector Start, FVector End)
 {
-	FVector Direction = (End - Start).GetSafeNormal(); // Get direction to target
-	float Distance = (End - Start).Size(); // Get distance to target
+	float AngleOffset = 45.f;
+	// Get the difference between the target and the start
+	FVector Delta = End - Start;
 
-	// Calculate the height difference
-	float Height = Start.Z - End.Z;
+	// Calculate the horizontal and vertical distance to the target
+	float dx = FMath::Sqrt(Delta.X * Delta.X + Delta.Y * Delta.Y);
 
-	// Calculate horizontal distance
-	float HorizontalDistance = FMath::Sqrt(Distance * Distance - Height * Height);
+	float dxThreshold = FMath::Sqrt(Delta.X * Delta.X + Delta.Y * Delta.Y) + 100;
+	float dy = Delta.Z;
 
 	// Get gravity from the physics settings, making it positive as it's returned as a negative value
-	float Gravity = -GetDefault<UPhysicsSettings>()->DefaultGravityZ;
+	float g = -GetDefault<UPhysicsSettings>()->DefaultGravityZ;
 
-	// Quadratic formula to determine launch angle
-	float UnderRoot = (LaunchSpeed * LaunchSpeed * LaunchSpeed * LaunchSpeed) - Gravity * (Gravity * HorizontalDistance * HorizontalDistance + 2 * Height * LaunchSpeed * LaunchSpeed);
-	float AngleRadians;
-	if(UnderRoot >= 0)
-	{
-		AngleRadians = FMath::Atan((LaunchSpeed * LaunchSpeed - FMath::Sqrt(UnderRoot)) / (Gravity * HorizontalDistance));
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No solution found!"));
-		return FVector::ZeroVector;
-	}
+	// Binary search for the optimal launch speed
+	float v_low = 0, v_high = 1000000; // adjust the range as needed
+	float v;
+	for (int i = 0; i < 1000; i++) // adjust the number of iterations as needed
+		{
+		v = (v_low + v_high) / 2;
 
-	// Calculate speed for x and y (horizontal)
-	float SpeedXY = HorizontalDistance / FMath::Cos(AngleRadians);
+		// Calculate the launch angle for the current speed
+		float theta = FMath::Atan((v * v + FMath::Sqrt(v * v * v * v - g * (g * dx * dx + 2 * dy * v * v))) / (g * dx)) + FMath::DegreesToRadians(AngleOffset);
 
-	// Solve for speed in z (vertical)
-	float SpeedZ = FMath::Sqrt((Gravity * Distance * Distance) / (2.0f * (HorizontalDistance * FMath::Tan(AngleRadians) - Height)));
+		// Check if the current speed allows the projectile to hit the target
+		if (v * v * FMath::Sin(2 * theta) / g >= dx && v * v * FMath::Sin(2 * theta) / g <= dxThreshold)
+			v_high = v;
+		else
+			v_low = v;
+		}
 
-	// Create velocity vector in local space
-	FVector Velocity(SpeedXY * FMath::Cos(AngleRadians), SpeedXY * FMath::Sin(AngleRadians), SpeedZ);
+	// Apply angle offset to the launch angle
+	float theta = FMath::Atan((v * v + FMath::Sqrt(v * v * v * v - g * (g * dx * dx + 2 * dy * v * v))) / (g * dx)) + FMath::DegreesToRadians(AngleOffset);
 
-	// Rotate velocity vector to target direction
-	Velocity = Velocity.RotateAngleAxis(-FMath::RadiansToDegrees(FMath::Atan2(Direction.Y, Direction.X)) + 90.0f, FVector(0.0f, 0.0f, 1.0f));
+	// Calculate the launch velocity in the target direction
+	FVector LaunchVelocity = v * Delta.GetSafeNormal();
 
-	return Velocity;
+	// Adjust the Z component of the velocity for the launch angle
+	LaunchVelocity.Z = v * FMath::Sin(theta);
+
+	return LaunchVelocity;
 }
