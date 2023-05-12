@@ -140,14 +140,18 @@ void ASoundHorrorGameIdeaPlayerController::OnRotateToMouse(const FInputActionVal
 		const FVector ActorLocation = ControlledPawn->GetActorLocation();
 		const FVector Actor2D = FVector(ActorLocation.X, ActorLocation.Y, 0);
 		const FVector2D MouseVector = Value.Get<FVector2D>();
-		const FVector MouseValueWithActorPosition = FVector(ActorLocation.X + MouseVector.X,
-		                                                    ActorLocation.Y + MouseVector.Y, 0);
 
-		const FRotator RotateTo = UKismetMathLibrary::FindLookAtRotation(Actor2D, MouseValueWithActorPosition);
+		const FVector TouchOrMousePosition = GetTouchOrMousePosition();
+		const FVector MouseValueWithoutZ = FVector( TouchOrMousePosition.X,
+		                                                    TouchOrMousePosition.Y, 0);
+
+		FRotator RotateTo = UKismetMathLibrary::FindLookAtRotation(Actor2D, MouseValueWithoutZ);
 		if (const ACharacter* CharacterFromController = GetCharacter(); CharacterFromController != nullptr)
 		{
-			LastMouseRotation = RotateTo.GetInverse();
-			CharacterFromController->GetMesh()->SetWorldRotation(LastMouseRotation);
+			
+			RotateTo.Yaw -= 90.0f;
+			CharacterFromController->GetMesh()->SetWorldRotation(RotateTo);
+			LastMouseRotation = RotateTo;
 		}
 	}
 }

@@ -47,7 +47,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Math|Float")
 	static float GetMaxFloat();
-
-	UFUNCTION(BlueprintCallable, Category = "ThrowTrajectory")
-	static FVector CalculateLaunchVelocity(FVector Start, FVector End);
 };

@@ -9,12 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea.dir/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" afterDir="false" />
     </list>
@@ -343,6 +340,7 @@
       <workItem from="1683832613852" duration="2570000" />
       <workItem from="1683835971335" duration="283000" />
       <workItem from="1683836681557" duration="3507000" />
+      <workItem from="1683918230207" duration="4291000" />
     </task>
     <servers />
   </component>
