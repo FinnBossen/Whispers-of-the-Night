@@ -60,6 +60,7 @@ void ASoundHorrorGameIdeaPlayerController::SetupInputComponent()
 		                                   &ASoundHorrorGameIdeaPlayerController::OnRotateToMouse);
 
 
+        /* Mouse click moving disabled
 		// Setup mouse input events
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Started, this,
 		                                   &ASoundHorrorGameIdeaPlayerController::OnInputStarted);
@@ -79,6 +80,7 @@ void ASoundHorrorGameIdeaPlayerController::SetupInputComponent()
 		                                   &ASoundHorrorGameIdeaPlayerController::OnTouchReleased);
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Canceled, this,
 		                                   &ASoundHorrorGameIdeaPlayerController::OnTouchReleased);
+		*/
 	}
 }
 

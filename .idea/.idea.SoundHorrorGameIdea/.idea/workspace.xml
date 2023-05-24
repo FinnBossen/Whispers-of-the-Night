@@ -11,9 +11,13 @@
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/PostProcess/M_HighLightSilhouletteInColor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/PostProcess/M_HighLightSilhouletteInColor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/RT_SilhouetteTexture_Mat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/RT_SilhouetteTexture_Mat.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/1/QK/8TRA7H7ZH33J0BCQBVHZX4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/1/QK/8TRA7H7ZH33J0BCQBVHZX4.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Controller/SoundHorrorGameIdeaPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,6 +345,9 @@
       <workItem from="1683835971335" duration="283000" />
       <workItem from="1683836681557" duration="3507000" />
       <workItem from="1683918230207" duration="4730000" />
+      <workItem from="1684955321076" duration="86000" />
+      <workItem from="1684955642790" duration="56000" />
+      <workItem from="1684955725999" duration="1506000" />
     </task>
     <servers />
   </component>
