@@ -42,9 +42,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Actor")
 	static void GetActorScreenLocation(AActor* Actor, FVector2D& ActorScreenLocation);
 
-	UFUNCTION(BlueprintCallable, Category = "Math|Float")
-	static float GetFloatDifference(float FloatA, float FloatB);
+	UFUNCTION(BlueprintCallable, Category = "UI/Widget")
+	static bool IsPointInBox(FVector2D Point, FBox2D Box);
 
+	UFUNCTION(BlueprintCallable, Category = "UI/Widget")
+	static FBox2D GetWidgetBoxRelativeToCanvas(UWidget* Widget, UCanvasPanel* Canvas);
+
+	UFUNCTION(BlueprintCallable, Category = "UI/Widget")
+	static bool IsPointInWidget(UCanvasPanel* Canvas, FVector2D Point, UWidget* Widget);
+	
 	UFUNCTION(BlueprintCallable, Category = "Math|Float")
 	static float GetMaxFloat();
+
+	UFUNCTION(BlueprintCallable, Category = "Math|Float")
+	static float GetFloatDifference(const float FloatA, const float FloatB);
 };

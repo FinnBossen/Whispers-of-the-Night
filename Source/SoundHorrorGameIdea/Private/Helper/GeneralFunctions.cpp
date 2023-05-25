@@ -2,11 +2,17 @@
 
 
 #include "Helper/GeneralFunctions.h"
+
+#include "Components/CanvasPanel.h"
+#include "Components/CanvasPanelSlot.h"
+#include "Components/PanelWidget.h"
+#include "Components/Widget.h"
 #include "Enemy/GhostEnemy.h"
 #include "Engine/SCS_Node.h"
 #include "Kismet/GameplayStatics.h"
 #include "Manager/SoundClueManager/SoundCluesManager.h"
 #include "PhysicsEngine/PhysicsSettings.h"
+#include "Slate/WidgetTransform.h"
 
 TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AActor* ActorCallingFunction)
 {
@@ -177,10 +183,47 @@ void UGeneralFunctions::GetActorScreenLocation(AActor* Actor, FVector2D& ActorSc
 	UGameplayStatics::ProjectWorldToScreen(PlayerController, ActorWorldLocation, ActorScreenLocation);
 }
 
+bool UGeneralFunctions::IsPointInBox(const FVector2D Point, const FBox2D Box)
+{
+	return Box.IsInside(Point);
+}
+
+FBox2D UGeneralFunctions::GetWidgetBoxRelativeToCanvas(UWidget* Widget, UCanvasPanel* Canvas)
+{
+	if (Widget == nullptr || Canvas == nullptr)
+	{
+		return FBox2D();
+	}
+
+	FGeometry WidgetGeometry = Widget->GetCachedGeometry();
+	FGeometry CanvasGeometry = Canvas->GetCachedGeometry();
+
+	FVector2D WidgetAbsolutePosition = WidgetGeometry.GetAbsolutePosition();
+	FVector2D WidgetSize = WidgetGeometry.GetLocalSize();
+
+	FVector2D PositionRelativeToCanvas = CanvasGeometry.AbsoluteToLocal(WidgetAbsolutePosition);
+
+	// The returned box will have its Min point at the top-left of the widget,
+	// and its Max point at the bottom-right.
+	return FBox2D(PositionRelativeToCanvas, PositionRelativeToCanvas + WidgetSize);
+}
+
 float UGeneralFunctions::GetFloatDifference(const float FloatA, const float FloatB)
 {
 	const float Difference = FMath::Abs(FloatA - FloatB);
 	return Difference;
+}
+
+bool UGeneralFunctions::IsPointInWidget(UCanvasPanel* Canvas,const FVector2D Point, UWidget* Widget)
+{
+	// Check for a null widget.
+	if (!Widget) return false;
+
+	// Get the widget's bounding box.
+	const FBox2D Box = GetWidgetBoxRelativeToCanvas(Widget, Canvas);
+
+	// Check if the point is inside the box.
+	return IsPointInBox(Point, Box);
 }
 
 float UGeneralFunctions::GetMaxFloat()
