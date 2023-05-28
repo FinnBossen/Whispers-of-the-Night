@@ -56,4 +56,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Math|Float")
 	static float GetFloatDifference(const float FloatA, const float FloatB);
+
+	UFUNCTION(BlueprintCallable, Category = "Rotation")
+	static void RotateCapsule(UCapsuleComponent* Capsule, float Degree);
 };

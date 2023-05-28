@@ -4,15 +4,13 @@
 #include "Helper/GeneralFunctions.h"
 
 #include "Components/CanvasPanel.h"
-#include "Components/CanvasPanelSlot.h"
-#include "Components/PanelWidget.h"
 #include "Components/Widget.h"
 #include "Enemy/GhostEnemy.h"
 #include "Engine/SCS_Node.h"
 #include "Kismet/GameplayStatics.h"
 #include "Manager/SoundClueManager/SoundCluesManager.h"
-#include "PhysicsEngine/PhysicsSettings.h"
-#include "Slate/WidgetTransform.h"
+#include "GameFramework/Actor.h"
+#include "Components/CapsuleComponent.h"
 
 TArray<AGhostEnemy*> UGeneralFunctions::GetAllEnemiesThePlayerIsHearing(const AActor* ActorCallingFunction)
 {
@@ -195,13 +193,13 @@ FBox2D UGeneralFunctions::GetWidgetBoxRelativeToCanvas(UWidget* Widget, UCanvasP
 		return FBox2D();
 	}
 
-	FGeometry WidgetGeometry = Widget->GetCachedGeometry();
-	FGeometry CanvasGeometry = Canvas->GetCachedGeometry();
+	const FGeometry WidgetGeometry = Widget->GetCachedGeometry();
+	const FGeometry CanvasGeometry = Canvas->GetCachedGeometry();
 
-	FVector2D WidgetAbsolutePosition = WidgetGeometry.GetAbsolutePosition();
-	FVector2D WidgetSize = WidgetGeometry.GetLocalSize();
+	const FVector2D WidgetAbsolutePosition = WidgetGeometry.GetAbsolutePosition();
+	const FVector2D WidgetSize = WidgetGeometry.GetLocalSize();
 
-	FVector2D PositionRelativeToCanvas = CanvasGeometry.AbsoluteToLocal(WidgetAbsolutePosition);
+	const FVector2D PositionRelativeToCanvas = CanvasGeometry.AbsoluteToLocal(WidgetAbsolutePosition);
 
 	// The returned box will have its Min point at the top-left of the widget,
 	// and its Max point at the bottom-right.
@@ -212,6 +210,20 @@ float UGeneralFunctions::GetFloatDifference(const float FloatA, const float Floa
 {
 	const float Difference = FMath::Abs(FloatA - FloatB);
 	return Difference;
+}
+
+void UGeneralFunctions::RotateCapsule(UCapsuleComponent* Capsule, const float Degree)
+{
+	if(Capsule)
+	{
+		FRotator CurrentRotation = Capsule->GetComponentRotation();
+
+		// Add the rotation degree to the yaw component of the rotation
+		CurrentRotation.Yaw += Degree;
+
+		// Set the new rotation for the capsule
+		Capsule->SetWorldRotation(CurrentRotation);
+	}
 }
 
 bool UGeneralFunctions::IsPointInWidget(UCanvasPanel* Canvas,const FVector2D Point, UWidget* Widget)
