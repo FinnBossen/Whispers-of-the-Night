@@ -8,19 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Input/Actions/IA_MouseMovement.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Input/Actions/IA_MouseMovement.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Input/IMC_Default.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/FearMeterMenu/WB_FearMeterMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/FearMeterMenu/WB_FearMeterMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueDirectionIndicator/SoundDirectionIndicator.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueMenu/WB_SoundClue_Menu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueMenu/WB_SoundClue_Menu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" afterDir="false" />
-    </list>
+    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -274,7 +262,7 @@
       <workItem from="1684955321076" duration="86000" />
       <workItem from="1684955642790" duration="56000" />
       <workItem from="1684955725999" duration="4583000" />
-      <workItem from="1685044680945" duration="2824000" />
+      <workItem from="1685044680945" duration="3426000" />
     </task>
     <servers />
   </component>
