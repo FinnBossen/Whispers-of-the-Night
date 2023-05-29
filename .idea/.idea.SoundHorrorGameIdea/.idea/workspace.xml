@@ -11,10 +11,6 @@
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/WB_VisualClueMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Notes.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Notes.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Helper/GeneralFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Helper/GeneralFunctions.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +266,8 @@
       <workItem from="1684955642790" duration="56000" />
       <workItem from="1684955725999" duration="4583000" />
       <workItem from="1685044680945" duration="3426000" />
-      <workItem from="1685301464727" duration="2503000" />
+      <workItem from="1685301464727" duration="3068000" />
+      <workItem from="1685390634572" duration="613000" />
     </task>
     <servers />
   </component>
