@@ -10,7 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/VisualClueMenu/BP_Lost_Soul_Silhouette.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueMenu/WB_SoundClue_Menu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/SoundClueMenu/WB_SoundClue_Menu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Note_Item.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Widgets/WB_Clue_Note_Item.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +269,9 @@
       <workItem from="1684955725999" duration="4583000" />
       <workItem from="1685044680945" duration="3426000" />
       <workItem from="1685301464727" duration="3068000" />
-      <workItem from="1685390634572" duration="613000" />
+      <workItem from="1685390634572" duration="1477000" />
+      <workItem from="1685466126939" duration="2339000" />
+      <workItem from="1685550536562" duration="535000" />
     </task>
     <servers />
   </component>
