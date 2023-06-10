@@ -34,6 +34,17 @@ void USoundClue::BeginPlay()
 // Play the sound that is attached to the sound clue
 void USoundClue::PlaySound(AActor* Owner)
 {
+
+	const FString ActorName = Owner->GetName();
+	if(IsMuted)
+	{
+		const FString MutedMessage = ActorName + " is muted";
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, MutedMessage);	
+		return;
+	}
+	const FString NotMutedMessage = ActorName + " is not muted and active";
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, NotMutedMessage);	
+	
 	if (AudioComponent != nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("SoundClue: %s"), *Owner->GetName());
@@ -65,8 +76,10 @@ void USoundClue::StopSound() const
 	}
 }
 
-void USoundClue::MuteSound() const
+void USoundClue::MuteSound()
 {
+
+	IsMuted = true;
 	// Mute	sound
 	if (AudioComponent == nullptr)
 	{
@@ -75,10 +88,12 @@ void USoundClue::MuteSound() const
 	}
 
 	AudioComponent->SetVolumeMultiplier(0.0f);
+
 }
 
-void USoundClue::UnMuteSound() const
+void USoundClue::UnMuteSound()
 {
+	IsMuted = false;
 	// Unmute Sound
 	if (AudioComponent == nullptr)
 	{
@@ -87,6 +102,7 @@ void USoundClue::UnMuteSound() const
 	}
 
 	AudioComponent->SetVolumeMultiplier(1.0f);
+	
 }
 
 bool USoundClue::IsHeardByPlayer() const

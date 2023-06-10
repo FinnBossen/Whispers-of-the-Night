@@ -36,11 +36,11 @@ public:
 
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void MuteSound() const;
+	void MuteSound();
 	
 	//Play the sound
 	UFUNCTION(BlueprintCallable, Category = Sound)
-	void UnMuteSound() const;
+	void UnMuteSound();
 	
 	//Find out if Heard by player
 	UFUNCTION(BlueprintCallable, Category = Sound)
@@ -58,5 +58,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Sound)
 	AActor* PlayerActor;
+
+	UPROPERTY(EditAnywhere, Category = Sound)
+	bool IsMuted;
 
 };

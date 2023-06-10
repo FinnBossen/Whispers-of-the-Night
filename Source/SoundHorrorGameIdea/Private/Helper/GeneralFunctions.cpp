@@ -74,7 +74,7 @@ void UGeneralFunctions::MuteAllEnemiesInArray(TArray<AGhostEnemy*> GhostEnemies)
 		for (const auto& SoundCluePair : GhostEnemy->GetSoundClues())
 		{
 			// Cast SoundClue to USoundClue
-			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
+			USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
 			if (SoundClueCast == nullptr)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *GhostEnemy->GetName());
@@ -95,7 +95,7 @@ void UGeneralFunctions::UnMuteAllEnemiesInArray(TArray<AGhostEnemy*> GhostEnemie
 		for (const auto& SoundCluePair : GhostEnemy->GetSoundClues())
 		{
 			// Cast SoundClue to USoundClue
-			const USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
+			USoundClue* SoundClueCast = Cast<USoundClue>(SoundCluePair.Value);
 			if (SoundClueCast == nullptr)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Could not cast actor to USoundClue Actor: %s"), *GhostEnemy->GetName());
