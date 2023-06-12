@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Manager/ESoundClueType.h"
 #include "Manager/EVisualClueType.h"
+#include "Manager/EnemyAnimManager/CustomEnemyAnims.h"
 #include "Manager/SoundClueManager/SoundClue.h"
 #include "Manager/VisualClueManager/VisualClue.h"
 #include "GhostEnemy.generated.h"
@@ -35,6 +36,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Sound)
 	float GetNearestSoundCluePercentage() const;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = EnemyAnimationClass)
+	UCustomEnemyAnims* CustomEnemyAnims;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SoundCluesStoredAtEnemy)
 	TMap<ESoundClueType, USoundClue*> SoundClues;
