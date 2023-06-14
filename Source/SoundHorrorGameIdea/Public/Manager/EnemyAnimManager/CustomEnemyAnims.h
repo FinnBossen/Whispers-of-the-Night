@@ -16,7 +16,7 @@ protected:
 	
 public:	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = EnemyAnimationClass)
-	UAnimInstance* EnemyAnimationClass;
+	TSubclassOf<UAnimInstance> EnemyAnimationClass;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = EnemyMesh)
 	USkeletalMesh* EnemySkeletalMesh;

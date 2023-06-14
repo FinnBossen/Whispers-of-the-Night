@@ -9,13 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/CustomEnemyAnims.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/EnemyAnimManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/CustomEnemyAnims.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/EnemyAnimManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Enemy/GhostEnemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Enemy/GhostEnemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/ABP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/ABP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Yurei_Character_Mesh_Skeleton/T-Pose.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Yurei_Character_Mesh_Skeleton/T-Pose_PhysicsAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Yurei_Character_Mesh_Skeleton/T-Pose_Skeleton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/CustomEnemyAnims.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/CustomEnemyAnims.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,6 +321,7 @@
       <workItem from="1685550536562" duration="2891000" />
       <workItem from="1685563921540" duration="3800000" />
       <workItem from="1686603780581" duration="3147000" />
+      <workItem from="1686775655124" duration="2142000" />
     </task>
     <servers />
   </component>
