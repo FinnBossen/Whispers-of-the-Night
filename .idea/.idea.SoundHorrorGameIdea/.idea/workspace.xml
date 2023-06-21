@@ -8,10 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
-    </list>
+    <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,7 +312,7 @@
       <workItem from="1685563921540" duration="3800000" />
       <workItem from="1686603780581" duration="3147000" />
       <workItem from="1686775655124" duration="2952000" />
-      <workItem from="1686855919675" duration="783000" />
+      <workItem from="1686855919675" duration="784000" />
     </task>
     <servers />
   </component>
