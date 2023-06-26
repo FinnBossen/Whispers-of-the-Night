@@ -1,4 +1,5 @@
 #pragma once
+#include "CustomEnemyAccessory.h"
 #include "CustomEnemyAnims.generated.h"
 
 
@@ -20,5 +21,13 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = EnemyMesh)
 	USkeletalMesh* EnemySkeletalMesh;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Accessory)
+	TArray<UCustomEnemyAccessory*> StoredCustomEnemyAccessory;
+
+	/** 
+  * Spawn the accessory mesh and attach it to the specified socket.
+  */
+	UFUNCTION(BlueprintCallable, Category = Accessory)
+	void SpawnAndAttachAccessories();
 };
