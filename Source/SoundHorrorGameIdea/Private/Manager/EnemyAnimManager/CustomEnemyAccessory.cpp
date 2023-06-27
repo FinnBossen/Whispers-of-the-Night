@@ -3,6 +3,7 @@
 
 #include "Manager/EnemyAnimManager/CustomEnemyAccessory.h"
 
+class AStaticMeshActor;
 // Sets default values for this component's properties
 UCustomEnemyAccessory::UCustomEnemyAccessory()
 {
@@ -22,29 +23,23 @@ void UCustomEnemyAccessory::BeginPlay()
 	
 }
 
-void UCustomEnemyAccessory::SpawnAccessoryAtSocket(AActor* Owner) const
+void UCustomEnemyAccessory::SpawnAccessoryAtSocket(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const
 {
 	// Get a reference to the world
-
-	if(UWorld* World = GetWorld(); World && AccessoryMesh && Owner && !AccessorySocketName.IsNone())
+	// Check if the SkeletalMeshComponent and AccessoryMesh are valid
+	if (SkeletalMeshComponent && AccessoryMesh)
 	{
-		// Spawn the accessory mesh
+		// Create the StaticMeshComponent
+		UStaticMeshComponent* StaticMeshComponent = NewObject<UStaticMeshComponent>(Owner, UStaticMeshComponent::StaticClass());
 
-		// If the mesh was successfully spawned
-		if(const AActor* SpawnedAccessory = World->SpawnActor<AActor>(AccessoryMesh->GetClass()))
-		{
-			// Cast the spawned actor to a UStaticMeshComponent
+		// Set the Static Mesh
+		StaticMeshComponent->SetStaticMesh(AccessoryMesh);
 
-			// If the cast was successful
-			if(UStaticMeshComponent* AccessoryMeshComponent = Cast<UStaticMeshComponent>(SpawnedAccessory->GetRootComponent()))
-			{
-				// Set the static mesh
-				AccessoryMeshComponent->SetStaticMesh(AccessoryMesh);
-
-				// Attach the accessory to the specified socket on the owner's mesh
-				AccessoryMeshComponent->AttachToComponent(Owner->GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform, AccessorySocketName);
-			}
-		}
+		// Register the component to the game
+		StaticMeshComponent->RegisterComponent();
+        
+		// Attach the Static Mesh to the SkeletalMeshComponent on the specified socket
+		StaticMeshComponent->AttachToComponent(SkeletalMeshComponent, FAttachmentTransformRules::SnapToTargetIncludingScale, AccessorySocketName);
 	}
 }
 

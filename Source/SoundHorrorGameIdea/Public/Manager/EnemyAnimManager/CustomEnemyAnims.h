@@ -29,5 +29,5 @@ public:
   * Spawn the accessory mesh and attach it to the specified socket.
   */
 	UFUNCTION(BlueprintCallable, Category = Accessory)
-	void SpawnAndAttachAccessories();
+	void SpawnAndAttachAccessories(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const;
 };

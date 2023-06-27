@@ -48,16 +48,16 @@ ASoundHorrorGameIdeaCharacter::ASoundHorrorGameIdeaCharacter()
 
 void ASoundHorrorGameIdeaCharacter::Tick(float DeltaSeconds)
 {
-    Super::Tick(DeltaSeconds);
+	Super::Tick(DeltaSeconds);
 }
 
-void ASoundHorrorGameIdeaCharacter::SpawnAndAttachAccessories()
+void ASoundHorrorGameIdeaCharacter::SpawnAndAttachAccessories(USkeletalMeshComponent* SkeletalMeshComponent) const
 {
-	for(const auto& AccessoryAsset : StoredCustomPlayerAccessoryAssets)
+	for (const auto& AccessoryAsset : StoredCustomPlayerAccessoryAssets)
 	{
 		if (AccessoryAsset && AccessoryAsset->CustomAccessory)
 		{
-			AccessoryAsset->CustomAccessory->SpawnAccessoryAtSocket(this);
+			AccessoryAsset->CustomAccessory->SpawnAccessoryAtSocket(SkeletalMeshComponent, this->GetOwner());
 		}
 	}
 }
