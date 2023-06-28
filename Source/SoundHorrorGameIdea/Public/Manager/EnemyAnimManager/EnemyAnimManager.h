@@ -19,10 +19,16 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredJumpScares)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredAnims)
+	UCustomEnemyAnims* StoredCustomPlayerAnims;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = StoredAnims)
 	TArray<UCustomEnemyAnims*> StoredCustomEnemyAnims;
 	
 	UFUNCTION(BlueprintCallable, Category = StoredCustomEnemyAnims)
 	UCustomEnemyAnims* GetRandomCustomEnemyAnims();
+
+	UFUNCTION(BlueprintCallable, Category = StoredCustomEnemyAnims)
+	UCustomEnemyAnims* GetPlayerCustomAnims() const;
 	
 };

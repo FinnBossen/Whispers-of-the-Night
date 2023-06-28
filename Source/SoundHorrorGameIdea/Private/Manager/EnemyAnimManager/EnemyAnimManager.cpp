@@ -20,3 +20,8 @@ UCustomEnemyAnims* AEnemyAnimManager::GetRandomCustomEnemyAnims()
 	const int Index = FMath::RandRange(0, StoredCustomEnemyAnims.Num() - 1);
 	return StoredCustomEnemyAnims[Index];
 }
+
+UCustomEnemyAnims* AEnemyAnimManager::GetPlayerCustomAnims() const
+{
+	return StoredCustomPlayerAnims;
+}

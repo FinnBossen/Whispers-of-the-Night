@@ -7,7 +7,7 @@
 #include "CustomEnemyAccessory.generated.h"
 
 
-UCLASS()
+UCLASS(EditInlineNew, blueprintable)
 class UCustomEnemyAccessory : public UActorComponent
 {
 	GENERATED_BODY()
