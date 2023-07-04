@@ -9,13 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/JumpScareAnim.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/JumpScareAnim.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Skeleton.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/6/XT/K9DSYTEV9SXNID5E5JZCDX.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/6/XT/K9DSYTEV9SXNID5E5JZCDX.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/EnemyAnimManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/EnemyAnimManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/CustomEnemyAccessory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/CustomEnemyAccessory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/EnemyAnimManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/EnemyAnimManager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,6 +303,8 @@
       <workItem from="1687876453123" duration="5686000" />
       <workItem from="1687974580084" duration="2854000" />
       <workItem from="1687978328177" duration="529000" />
+      <workItem from="1688295674415" duration="673000" />
+      <workItem from="1688487619015" duration="7643000" />
     </task>
     <servers />
   </component>

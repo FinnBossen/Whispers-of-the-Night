@@ -1,5 +1,6 @@
 #pragma once
 #include "CustomEnemyAccessory.h"
+#include "JumpScareAnim.h"
 #include "CustomEnemyAnims.generated.h"
 
 
@@ -24,6 +25,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Accessory)
 	TArray<UCustomEnemyAccessory*> StoredCustomEnemyAccessory;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = JumpScareAnim)
+	UJumpScareAnim* JumpScareAnim;
 
 	/** 
   * Spawn the accessory mesh and attach it to the specified socket.
