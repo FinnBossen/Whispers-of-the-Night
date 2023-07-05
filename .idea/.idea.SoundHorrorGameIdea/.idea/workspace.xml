@@ -9,8 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Private/Manager/EnemyAnimManager/JumpScareAnim.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/SoundHorrorGameIdea/Public/Manager/EnemyAnimManager/JumpScareAnim.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +302,7 @@
       <workItem from="1687974580084" duration="2854000" />
       <workItem from="1687978328177" duration="529000" />
       <workItem from="1688295674415" duration="673000" />
-      <workItem from="1688487619015" duration="7643000" />
+      <workItem from="1688487619015" duration="8005000" />
     </task>
     <servers />
   </component>
