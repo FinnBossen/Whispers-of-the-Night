@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "JumpScareAnim.generated.h"
-
 
 class UCameraComponent;
 
@@ -22,6 +22,9 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
 	void ToggleCamera(const AActor* Player);
 
 	void CreateCameraAndPutInToSocket();
@@ -36,6 +39,12 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
 	bool IsCameraActive = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
+	FName HeadSocketName;
+
+	UPROPERTY()
+	USkeletalMeshSocket* HeadSocket;
 
 public:	
 
@@ -52,9 +61,3 @@ public:
 	UFUNCTION()
 	void OnJumpScareAnimEnded(UAnimMontage* Montage, bool bInterrupted);
 };
-
-
-
-
-
-
