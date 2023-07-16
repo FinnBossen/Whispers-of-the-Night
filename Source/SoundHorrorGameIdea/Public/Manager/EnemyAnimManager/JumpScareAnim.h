@@ -27,7 +27,7 @@ protected:
 
 	void ToggleCamera(const AActor* Player);
 
-	void CreateCameraAndPutInToSocket();
+
 
 	static TArray<UCameraComponent*> GetAllCameraComponents(const AActor* Actor);
 
@@ -40,19 +40,26 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
 	bool IsCameraActive = false;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
-	FName HeadSocketName;
 
-	UPROPERTY()
-	USkeletalMeshSocket* HeadSocket;
+public:
 
-public:	
+	UFUNCTION(BlueprintCallable, Category = Animation)
+	void PutCameraIntoSocket(UCameraComponent* CameraComponent, USkeletalMeshComponent* OwnerSkeletalMeshComponent);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
 	UAnimMontage* JumpScareAnim;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
 	FName CameraSocketName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
+	FName HeadSocketName;
+
+	UPROPERTY()
+	USkeletalMeshSocket* HeadSocket;
+
+	UPROPERTY()
+	USkeletalMeshComponent* AttachedSkeletonMeshOwner;
 
 	UFUNCTION(BlueprintCallable, Category = Animation)
 	void PlayJumpScareAnim(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner, AActor* Player);

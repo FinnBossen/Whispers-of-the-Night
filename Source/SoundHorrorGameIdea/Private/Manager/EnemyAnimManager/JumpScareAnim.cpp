@@ -3,6 +3,8 @@
 #include "Manager/EnemyAnimManager/JumpScareAnim.h"
 
 #include "Camera/CameraComponent.h"
+#include "Chaos/ChaosPerfTest.h"
+#include "Engine/SkeletalMeshSocket.h"
 
 // Sets default values for this component's properties
 UJumpScareAnim::UJumpScareAnim()
@@ -19,9 +21,31 @@ UJumpScareAnim::UJumpScareAnim()
 void UJumpScareAnim::BeginPlay()
 {
 	Super::BeginPlay();
+}
 
-	CreateCameraAndPutInToSocket();
+void UJumpScareAnim::TickComponent(const float DeltaTime, const ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
+	if(IsCameraActive && JumpScareCamera && HeadSocket)
+	{
+		// Cast the root component to a skeletal mesh component
+
+		if (const USkeletalMeshComponent* SkeletalMeshComponent = AttachedSkeletonMeshOwner)
+		{
+			// Get the world location of the HeadSocket
+			const FVector HeadLocation = HeadSocket->GetSocketLocation(SkeletalMeshComponent);
+
+			// Calculate the direction vector from the camera to the HeadSocket
+			const FVector LookAtDirection = (HeadLocation - JumpScareCamera->GetComponentLocation()).GetSafeNormal();
+
+			// Create a rotation based on the direction vector
+			const FRotator LookAtRotation = LookAtDirection.Rotation();
+
+			// Set the camera's rotation to the LookAtRotation
+			JumpScareCamera->SetWorldRotation(LookAtRotation);
+		}
+	}
 }
 
 void UJumpScareAnim::ToggleCamera(const AActor* Player)
@@ -63,10 +87,38 @@ void UJumpScareAnim::ToggleCamera(const AActor* Player)
 	IsCameraActive = !IsCameraActive;
 }
 
-void UJumpScareAnim::CreateCameraAndPutInToSocket()
+void UJumpScareAnim::PutCameraIntoSocket(UCameraComponent* CameraComponent,USkeletalMeshComponent* OwnerSkeletalMeshComponent)
 {
-	// Create the JumpScareCamera and put into the owner socket with scale and rotation
-	JumpScareCamera = NewObject<UCameraComponent>(GetOwner(), UCameraComponent::StaticClass(), CameraSocketName);
+	if(!OwnerSkeletalMeshComponent)
+	{
+		UE_LOG(LogTemp, Error, TEXT("OwnerSkeletalMeshComponent is not valid for JumpScareAnim"));
+		return;
+	}
+
+	AttachedSkeletonMeshOwner = OwnerSkeletalMeshComponent;
+	// Put cameraComponent in to the socket
+	if (CameraComponent)
+	{
+		// Save the JumpScareCamera
+		JumpScareCamera = CameraComponent;
+
+		// Register the JumpScareCamera to the game
+		JumpScareCamera->RegisterComponent();
+
+		// Attach the JumpScareCamera to the SkeletalMeshComponent on the specified socket
+		JumpScareCamera->AttachToComponent(CameraComponent, FAttachmentTransformRules::SnapToTargetIncludingScale, CameraSocketName);
+
+		// Set the active state of the JumpScareCamera
+		JumpScareCamera->SetActive(false);
+	}
+	
+	// Assuming the SkeletalMeshComponent is the owner's root component
+	if (const USkeletalMeshComponent* SkeletalMeshComponent = Cast<USkeletalMeshComponent>(OwnerSkeletalMeshComponent))
+	{
+		// Get the HeadSocket by its name
+		HeadSocket = const_cast<USkeletalMeshSocket*>(SkeletalMeshComponent->GetSocketByName(HeadSocketName));
+	}
+	
 }
 
 TArray<UCameraComponent*> UJumpScareAnim::GetAllCameraComponents(const AActor* Actor)
