@@ -10,14 +10,10 @@
   <component name="ChangeListManager">
     <list default="true" id="588006ac-db6a-4903-a0c5-518501ade4c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoundHorrorGameIdea/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_Ghost_Monster_AI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/AkaManto_Character_Mesh_Skeleton/Aka_Manto.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Characters/AkaManto_Character_Mesh_Skeleton/Aka_Manto.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Mesh.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Mesh.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Characters/Player_Character_Mesh_Skeleton/Player_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/3/3X/WBYPOKTTI7N89RA9P06LJO.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/HV/2NBXHZ8KX5ZIDHNFLJ0LKU.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/5/HV/2NBXHZ8KX5ZIDHNFLJ0LKU.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/6/XT/K9DSYTEV9SXNID5E5JZCDX.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/6/XT/K9DSYTEV9SXNID5E5JZCDX.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/9/DA/TRIUG1QENQFPNEQ8W37203.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/VE/3GM5PUHNNICF8C3UVLELIH.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/C/VE/3GM5PUHNNICF8C3UVLELIH.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/GeneralGameMechanicsTestMap/D/FH/X17SBOUEIMP0VFZRHDVCX6.uasset" afterDir="false" />
@@ -68,6 +64,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Hgc0ei0ZlwChOG0nUezwjQqysj" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -321,7 +320,8 @@
       <workItem from="1689268392974" duration="152000" />
       <workItem from="1689270437037" duration="1375000" />
       <workItem from="1689437426003" duration="4756000" />
-      <workItem from="1689507360593" duration="1641000" />
+      <workItem from="1689507360593" duration="1869000" />
+      <workItem from="1689624474892" duration="2556000" />
     </task>
     <servers />
   </component>
