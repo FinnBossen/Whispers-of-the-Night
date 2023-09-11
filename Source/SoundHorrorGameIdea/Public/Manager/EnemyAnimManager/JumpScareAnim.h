@@ -53,11 +53,16 @@ public:
 	USkeletalMeshComponent* AttachedSkeletonMeshOwner;
 
 	UFUNCTION(BlueprintCallable, Category = Animation)
-	void PlayJumpScareAnim(USkeletalMeshComponent* SkeletalMeshComponent,  AActor* Player);
+	void PlayJumpScareAnim(USkeletalMeshComponent* SkeletalMeshComponent, ACharacter* Enemy, ACharacter* Player);
 
 	// This function will be called when the JumpScareAnim animation ends
 	UFUNCTION()
 	void OnJumpScareAnimEnded(UAnimMontage* Montage, bool bInterrupted);
 
 	FOnMontageEndedDelegate OnMontageEndedDelegate;
+private:
+	UPROPERTY()
+	ACharacter* EnemyCharacter;
+	UPROPERTY()
+	ACharacter* PlayerCharacter;
 };
