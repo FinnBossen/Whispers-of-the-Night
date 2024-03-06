@@ -12,9 +12,21 @@ void UCustomEnemyAnims::BeginPlay()
 void UCustomEnemyAnims::SpawnAndAttachAccessories(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const
 {
 	// Loop through all the accessories in the array
-	for(const auto& Accessory : StoredCustomEnemyAccessory)
+	for (const auto& Accessory : StoredCustomEnemyAccessory)
 	{
 		// Call the function in UCustomEnemyAccessory to spawn and attach the accessory
 		Accessory->SpawnAccessoryAtSocket(SkeletalMeshComponent, Owner);
+	}
+}
+
+void UCustomEnemyAnims::SpawnAndAttachAccessoriesWithShadow(USkeletalMeshComponent* SkeletalMeshComponent,
+                                                            AActor* Owner, const bool CastShadow) const
+{
+	SkeletalMeshComponent->SetCastShadow(false);
+	// Loop through all the accessories in the array
+	for (const auto& Accessory : StoredCustomEnemyAccessory)
+	{
+		// Call the function in UCustomEnemyAccessory to spawn and attach the accessory
+		Accessory->SpawnAccessoryAtSocketWithoutShadow(SkeletalMeshComponent, Owner);
 	}
 }

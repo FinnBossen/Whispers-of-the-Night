@@ -43,3 +43,26 @@ void UCustomEnemyAccessory::SpawnAccessoryAtSocket(USkeletalMeshComponent* Skele
 	}
 }
 
+void UCustomEnemyAccessory::SpawnAccessoryAtSocketWithoutShadow(USkeletalMeshComponent* SkeletalMeshComponent,
+	AActor* Owner) const
+{
+	SkeletalMeshComponent->SetCastShadow(false);
+	// Get a reference to the world
+	// Check if the SkeletalMeshComponent and AccessoryMesh are valid
+	if (SkeletalMeshComponent && AccessoryMesh)
+	{
+		// Create the StaticMeshComponent
+		UStaticMeshComponent* StaticMeshComponent = NewObject<UStaticMeshComponent>(Owner, UStaticMeshComponent::StaticClass());
+
+		StaticMeshComponent->SetCastShadow(false);
+		// Set the Static Mesh
+		StaticMeshComponent->SetStaticMesh(AccessoryMesh);
+
+		// Register the component to the game
+		StaticMeshComponent->RegisterComponent();
+        
+		// Attach the Static Mesh to the SkeletalMeshComponent on the specified socket
+		StaticMeshComponent->AttachToComponent(SkeletalMeshComponent, FAttachmentTransformRules::SnapToTargetIncludingScale, AccessorySocketName);
+	}
+}
+

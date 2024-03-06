@@ -22,6 +22,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Accessory)
 	void SpawnAccessoryAtSocket(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const;
 
+	/**
+* Spawn the accessory mesh and attach it to the specified socket.
+*/
+	UFUNCTION(BlueprintCallable, Category = Accessory)
+	void SpawnAccessoryAtSocketWithoutShadow(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

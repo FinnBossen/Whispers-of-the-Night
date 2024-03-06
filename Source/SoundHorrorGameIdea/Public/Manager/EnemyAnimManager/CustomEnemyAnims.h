@@ -34,4 +34,10 @@ public:
   */
 	UFUNCTION(BlueprintCallable, Category = Accessory)
 	void SpawnAndAttachAccessories(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner) const;
+
+	/** 
+* Spawn the accessory mesh and attach it to the specified socket. And decide if it casts a shadow or not.
+*/
+	UFUNCTION(BlueprintCallable, Category = Accessory)
+	void SpawnAndAttachAccessoriesWithShadow(USkeletalMeshComponent* SkeletalMeshComponent, AActor* Owner, const bool CastShadow) const;
 };
